@@ -34,6 +34,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DuShu.DAO", "DuShu.DAO\DuSh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DuShu.BLL", "DuShu.BLL\DuShu.BLL.csproj", "{9CB50EA9-11D2-406A-A7CA-184A8D76CF33}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Doc", "Doc", "{C208AD6D-537B-4434-B9B3-04BB141B94A1}"
+	ProjectSection(SolutionItems) = preProject
+		Doc\介绍.txt = Doc\介绍.txt
+		Doc\编码规范.doc = Doc\编码规范.doc
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
