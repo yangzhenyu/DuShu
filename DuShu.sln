@@ -1,0 +1,75 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Web", "Web\", "{81A9077B-02F3-4462-A07D-20A124D00F48}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv2.0"
+		ProjectReferences = "{9cb50ea9-11d2-406a-a7ca-184a8d76cf33}|DuShu.BLL.dll;{be01e99b-6f6e-47c5-841a-99a109576ea5}|DuShu.DAO.dll;{63621773-26fc-4eef-93d8-12e8a80e9e1d}|DuShu.Model.dll;{712ff974-adea-4d1f-ad76-92eb429484a8}|DuShu.VO.dll;{4720c63c-a2c3-40d2-af37-f12a6a65152b}|GY.Common.dll;{cb30546b-7445-4992-985b-5f2be4b6c38f}|GY.Core.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/Web"
+		Debug.AspNetCompiler.PhysicalPath = "Web\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Web\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Web"
+		Release.AspNetCompiler.PhysicalPath = "Web\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Web\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "4784"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GY.Core", "GY.Core\GY.Core.csproj", "{CB30546B-7445-4992-985B-5F2BE4B6C38F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GY.Common", "GY.Common\GY.Common.csproj", "{4720C63C-A2C3-40D2-AF37-F12A6A65152B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DuShu.VO", "DuShu.VO\DuShu.VO.csproj", "{712FF974-ADEA-4D1F-AD76-92EB429484A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DuShu.Model", "DuShu.Model\DuShu.Model.csproj", "{63621773-26FC-4EEF-93D8-12E8A80E9E1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DuShu.DAO", "DuShu.DAO\DuShu.DAO.csproj", "{BE01E99B-6F6E-47C5-841A-99A109576EA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DuShu.BLL", "DuShu.BLL\DuShu.BLL.csproj", "{9CB50EA9-11D2-406A-A7CA-184A8D76CF33}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{81A9077B-02F3-4462-A07D-20A124D00F48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81A9077B-02F3-4462-A07D-20A124D00F48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81A9077B-02F3-4462-A07D-20A124D00F48}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{81A9077B-02F3-4462-A07D-20A124D00F48}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{CB30546B-7445-4992-985B-5F2BE4B6C38F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB30546B-7445-4992-985B-5F2BE4B6C38F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB30546B-7445-4992-985B-5F2BE4B6C38F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB30546B-7445-4992-985B-5F2BE4B6C38F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4720C63C-A2C3-40D2-AF37-F12A6A65152B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4720C63C-A2C3-40D2-AF37-F12A6A65152B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4720C63C-A2C3-40D2-AF37-F12A6A65152B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4720C63C-A2C3-40D2-AF37-F12A6A65152B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{712FF974-ADEA-4D1F-AD76-92EB429484A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{712FF974-ADEA-4D1F-AD76-92EB429484A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{712FF974-ADEA-4D1F-AD76-92EB429484A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{712FF974-ADEA-4D1F-AD76-92EB429484A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63621773-26FC-4EEF-93D8-12E8A80E9E1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63621773-26FC-4EEF-93D8-12E8A80E9E1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63621773-26FC-4EEF-93D8-12E8A80E9E1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63621773-26FC-4EEF-93D8-12E8A80E9E1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE01E99B-6F6E-47C5-841A-99A109576EA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE01E99B-6F6E-47C5-841A-99A109576EA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE01E99B-6F6E-47C5-841A-99A109576EA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE01E99B-6F6E-47C5-841A-99A109576EA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CB50EA9-11D2-406A-A7CA-184A8D76CF33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CB50EA9-11D2-406A-A7CA-184A8D76CF33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CB50EA9-11D2-406A-A7CA-184A8D76CF33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CB50EA9-11D2-406A-A7CA-184A8D76CF33}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

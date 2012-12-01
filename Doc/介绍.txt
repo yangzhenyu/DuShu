@@ -1,0 +1,35 @@
+一、目录约定:
+   Doc          (本系统的所有说明文档)
+   GY.Core      (整个项目的核心代码)
+   GY.Common    (整个项目的公共代码)
+   DuShu.BLL   （整个项目的业务管理层）
+   DuShu.DAO   （整个项目的数据层）
+   DuShu.Model （整个项目的模型层，与数据库有实际的表对应的结构）
+   DuShu.VO    （整个项目的临时数据对象层，与数据库没有实际表对应的模型）
+   WEB          (整个项目的WEB展示层)
+
+二、WEB的目录约定
+    App_Data	(存储日志、模板、配置及临时文件等)
+	Protected
+	Temp
+    Apps		(应用功能点)
+	App1
+	App2
+	..
+    Contrib		(公共组件/应用)
+	SysManagement   (系统管理功能) 
+		Pages	   (存放页面)
+		    
+		Controls    (存放用户控件)
+		  
+                Handlers    (存放处理程序，提供数据接口等) 
+    
+     Content  (存放图样式等内容）               
+     Scripts  (脚本存放)	 
+     Objects  (业务对象配置)  
+     Service  (对外服务的API)
+  
+    注:
+         
+
+三、类库组成说明
