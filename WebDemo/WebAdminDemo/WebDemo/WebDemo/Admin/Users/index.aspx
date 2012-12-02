@@ -16,7 +16,7 @@
                     { display: '手机号码', name: 'phone', width: 150, align: 'center' },
 
                     { display: '所属经理', name: 'mangername', width: 150, align: 'center' }
-                    ],
+                ],
                 minColToggle: 1,
                 onrowclick: false,
                 sortname: "id",
@@ -37,13 +37,13 @@
             });
             doQuery();
             $("#add").click(function () {
-                $.AddAction(600, 280, '添加用户', "add.aspx", doQuery); ;
+                $.AddAction(600, 280, '添加用户', "add.aspx", doQuery);;
             });
             $("#edit").click(function () {
-                $.EditAction(600, 280, '添加用户', "edit.aspx", doQuery); ;
+                $.EditAction(600, 280, '添加用户', "edit.aspx", doQuery);;
             });
             $("#delete").click(function () {
-                $.DeleteAction("user", doQuery); ;
+                $.DeleteAction("user", doQuery);;
             });
         });
         function doQuery() {
@@ -81,23 +81,24 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="btn-toolbar">
-        <div class="btn-group">
-            <a class="btn " id="add"><i class=" icon-plus-sign"></i>新增 </a><a class="btn " href="#"
-                id="edit"><i class=" icon-edit"></i>修改 </a><a class="btn " href="#" id="delete"><i
-                    class=" icon-remove"></i>删除 </a>
-        </div>
-        <div class="btn-group">
-            <a class="btn " href="#"><i class=" icon-upload"></i>导入 </a><a class="btn " href="#">
-                <i class=" icon-download"></i>导出 </a>
-        </div>
-        <div class="btn-group">
-            <a class="btn " href="#"><i class=" icon-user"></i>修改密码 </a>
-        </div>
+
+    <div class="btn-group">
+        <a class="btn " id="add"><i class=" icon-plus-sign"></i>新增 </a><a class="btn " href="#"
+            id="edit"><i class=" icon-edit"></i>修改 </a><a class="btn " href="#" id="delete"><i
+                class=" icon-remove"></i>删除 </a>
     </div>
+    <div class="btn-group">
+        <a class="btn " href="#"><i class=" icon-upload"></i>导入 </a><a class="btn " href="#">
+            <i class=" icon-download"></i>导出 </a>
+    </div>
+    <div class="btn-group">
+        <a class="btn " href="#"><i class=" icon-user"></i>修改密码 </a>
+    </div>
+
     <div class="cont_tools">
         <div class="input-prepend">
-            <i class="icon-eye-open"></i><span>用户名称:</span><input id="prependedInput" size="16"
+            <span class="add-on"><i class="icon-envelope"></i>用户名称</span>
+            <input id="prependedInput" size="16" style="width:100px"
                 type="text" />
             <button class="btn  btn-primary" type="submit" onclick="doQuery()">
                 <i class="icon-white icon-search"></i>查询

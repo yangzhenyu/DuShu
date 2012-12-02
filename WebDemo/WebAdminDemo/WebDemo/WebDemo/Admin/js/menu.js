@@ -62,10 +62,10 @@ function shutoropen(menucount) {
     var classname = m_id('menuimg_' + menucount).parentNode.className;
     if (m_id('menu_' + menucount).style.display == 'none') {
         m_id('menu_' + menucount).style.display = ''; collapsed = collapsed.replace('[' + menucount + ']', '');
-        m_id('menuimg_' + menucount).src = '../images/LeftNav/bt_show.png';
+        m_id('menuimg_' + menucount).src = '../img/LeftNav/bt_show.png';
     } else {
         m_id('menu_' + menucount).style.display = 'none'; collapsed += '[' + menucount + ']';
-        m_id('menuimg_' + menucount).src = '../images/LeftNav/bt_block.png';
+        m_id('menuimg_' + menucount).src = '../img/LeftNav/bt_block.png';
     }
 }
 
@@ -88,7 +88,7 @@ function OpenShutManager() {
         samllnav.style.display = "none";
         boxa.style.width = "210px";
         cont.style.paddingLeft = "208px";
-        document.body.style.background = "url(../images/index_bg.gif) repeat-y #ffffff";
+        document.body.style.background = "url(../img/index_bg.gif) repeat-y #ffffff";
     }
 }
 //更多栏
