@@ -42,6 +42,37 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wap", "Wap\Wap.csproj", "{0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GY.Security", "GY.Security\GY.Security.csproj", "{1CE126D7-FC10-4E04-A4BB-4BCBBA24CBA7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lin", "Lin", "{EB462CC2-3569-420B-A15A-B4D68D198902}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Spring", "Spring", "{20E9707E-E94E-437D-8109-DBA34CCBF2F2}"
+	ProjectSection(SolutionItems) = preProject
+		Lib\Spring\license.txt = Lib\Spring\license.txt
+		Lib\Spring\Spring.Aop.dll = Lib\Spring\Spring.Aop.dll
+		Lib\Spring\Spring.Core.dll = Lib\Spring\Spring.Core.dll
+		Lib\Spring\Spring.Data.dll = Lib\Spring\Spring.Data.dll
+		Lib\Spring\Spring.Data.xml = Lib\Spring\Spring.Data.xml
+		Lib\Spring\Spring.Testing.NUnit.dll = Lib\Spring\Spring.Testing.NUnit.dll
+		Lib\Spring\Spring.Testing.NUnit.xml = Lib\Spring\Spring.Testing.NUnit.xml
+		Lib\Spring\Spring.Web.dll = Lib\Spring\Spring.Web.dll
+		Lib\Spring\Spring.Web.Extensions.dll = Lib\Spring\Spring.Web.Extensions.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Log", "Log", "{410CED97-9F10-45D0-8AF2-86A49CFA99DF}"
+	ProjectSection(SolutionItems) = preProject
+		Lib\Log\log4net.dll = Lib\Log\log4net.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mybatis", "Mybatis", "{EFA06367-F5E3-4FA4-A7F5-62E0CF5AD172}"
+	ProjectSection(SolutionItems) = preProject
+		Lib\Mybatis\Castle.Core.dll = Lib\Mybatis\Castle.Core.dll
+		Lib\Mybatis\Castle.Core.xml = Lib\Mybatis\Castle.Core.xml
+		Lib\Mybatis\Castle.DynamicProxy2.dll = Lib\Mybatis\Castle.DynamicProxy2.dll
+		Lib\Mybatis\Castle.DynamicProxy2.xml = Lib\Mybatis\Castle.DynamicProxy2.xml
+		Lib\Mybatis\IBatisNet.DataMapper.xml = Lib\Mybatis\IBatisNet.DataMapper.xml
+		Lib\Mybatis\MyBatis.Common.dll = Lib\Mybatis\MyBatis.Common.dll
+		Lib\Mybatis\MyBatis.DataMapper.dll = Lib\Mybatis\MyBatis.DataMapper.dll
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,5 +114,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{20E9707E-E94E-437D-8109-DBA34CCBF2F2} = {EB462CC2-3569-420B-A15A-B4D68D198902}
+		{410CED97-9F10-45D0-8AF2-86A49CFA99DF} = {EB462CC2-3569-420B-A15A-B4D68D198902}
+		{EFA06367-F5E3-4FA4-A7F5-62E0CF5AD172} = {EB462CC2-3569-420B-A15A-B4D68D198902}
 	EndGlobalSection
 EndGlobal

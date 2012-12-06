@@ -30,6 +30,21 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\Lib\Log\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MyBatis.Common">
+      <HintPath>..\Lib\Mybatis\MyBatis.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="MyBatis.DataMapper">
+      <HintPath>..\Lib\Mybatis\MyBatis.DataMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Core">
+      <HintPath>..\Lib\Spring\Spring.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Web">
+      <HintPath>..\Lib\Spring\Spring.Web.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
@@ -81,17 +96,17 @@
     <Compile Include="Utils\Serializer\SerializerUtils.cs" />
     <Compile Include="Utils\Threading\ISyncCaller.cs" />
     <Compile Include="Utils\Threading\SyncCallerHost.cs" />
+    <Compile Include="Web\WebUtils.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Doc\ReadMe.txt" />
     <Content Include="Web\URLRewriter\ReadME.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Context\" />
+    <Folder Include="Context\Support\" />
     <Folder Include="DB\ADOMD\" />
     <Folder Include="DB\Mongo\" />
     <Folder Include="DB\SQL\MyBatis\" />
-    <Folder Include="Support\" />
     <Folder Include="Utils\Exception\" />
     <Folder Include="Utils\ExportData\" />
     <Folder Include="Web\Controls\" />

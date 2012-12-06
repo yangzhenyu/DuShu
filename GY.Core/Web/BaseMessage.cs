@@ -11,6 +11,13 @@ namespace GY.Core.Web
     /// Web 消息辅助类.
     /// </summary>
     public static class BaseMessage
-    {
+    { 
+        /// <summary>
+        /// 应用程序路径.
+        /// </summary>
+        public  static string AppPath
+        {
+            get { return WebUtils.AppPath(); }
+        }
     }
 }

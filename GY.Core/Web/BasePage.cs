@@ -12,7 +12,13 @@ namespace GY.Core.Web
     /// </summary>
     public class BasePage :Page
     {
-        
+        /// <summary>
+        /// 应用程序路径.
+        /// </summary>
+        protected static string AppPath
+        {
+            get { return WebUtils.AppPath(); }
+        }
         /// <summary>
         /// 系统提示信息
         /// </summary>

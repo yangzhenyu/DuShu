@@ -14,9 +14,9 @@ namespace GY.Core.Web
         /// <summary>
         /// 应用程序路径.
         /// </summary>
-        //protected static string AppPath
-        //{
-        //    get { return WebUtils.GetAppPath(); }
-        //}
+        protected static string AppPath
+        {
+            get { return WebUtils.AppPath(); }
+        }
     }
 }
