@@ -30,14 +30,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="IBatisNet.Common">
+      <HintPath>..\Lib\Ibatis\IBatisNet.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="IBatisNet.DataMapper">
+      <HintPath>..\Lib\Ibatis\IBatisNet.DataMapper.dll</HintPath>
+    </Reference>
     <Reference Include="log4net">
       <HintPath>..\Lib\Log\log4net.dll</HintPath>
-    </Reference>
-    <Reference Include="MyBatis.Common">
-      <HintPath>..\Lib\Mybatis\MyBatis.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="MyBatis.DataMapper">
-      <HintPath>..\Lib\Mybatis\MyBatis.DataMapper.dll</HintPath>
     </Reference>
     <Reference Include="Spring.Core">
       <HintPath>..\Lib\Spring\Spring.Core.dll</HintPath>
@@ -64,6 +64,10 @@
     <Compile Include="Cache\HttpRunCache.cs" />
     <Compile Include="Configuration\ExceptionConfig.cs" />
     <Compile Include="Configuration\GlobalConfig.cs" />
+    <Compile Include="DB\SQL\IBatis\CustomSqlMapper.cs" />
+    <Compile Include="DB\SQL\IBatis\IBatisMapper.cs" />
+    <Compile Include="DB\SQL\IBatis\Interface\IIBatisMapper.cs" />
+    <Compile Include="Delegate\ArgumentsDelegate.cs" />
     <Compile Include="Utils\Encryption\IEncryptionService.cs" />
     <Compile Include="Utils\Encryption\Impl\MD5Service.cs" />
     <Compile Include="Web\BaseMasterPage.cs">
@@ -106,7 +110,6 @@
     <Folder Include="Context\Support\" />
     <Folder Include="DB\ADOMD\" />
     <Folder Include="DB\Mongo\" />
-    <Folder Include="DB\SQL\MyBatis\" />
     <Folder Include="Utils\Exception\" />
     <Folder Include="Utils\ExportData\" />
     <Folder Include="Web\Controls\" />
