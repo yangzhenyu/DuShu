@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // 有关程序集的常规信息通过以下
 // 特性集控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("GY.Common")]
+[assembly: AssemblyTitle("GY.Security")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("GY.Common")]
+[assembly: AssemblyProduct("GY.Security")]
 [assembly: AssemblyCopyright("Copyright ©  2012")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // 如果此项目向 COM 公开，则下列 GUID 用于类型库的 ID
-[assembly: Guid("a7264934-2f8c-4a82-99c7-ffc068624d51")]
+[assembly: Guid("7f6ecb53-39a4-45ff-904d-33b2dd5ca132")]
 
 // 程序集的版本信息由下面四个值组成:
 //

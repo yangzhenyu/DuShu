@@ -1,7 +1,7 @@
 一、目录约定:
    Doc          (本系统的所有说明文档)
    GY.Core      (整个项目的核心代码)
-   GY.Common    (整个项目的公共代码)
+   GY.Security  (整个项目的权限管理控制层)
    DuShu.BLL   （整个项目的业务管理层）
    DuShu.DAO   （整个项目的数据层）
    DuShu.Model （整个项目的模型层，与数据库有实际的表对应的结构）
@@ -13,9 +13,9 @@
 	Protected
 	Temp
     Apps		(应用功能点)
-	App1
-	App2
-	..
+	  App1
+	  App2
+	  ..
     Contrib		(公共组件/应用)
 	SysManagement   (系统管理功能) 
 		Pages	   (存放页面)

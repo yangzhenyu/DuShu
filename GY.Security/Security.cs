@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace GY.Common
+namespace GY.Security
 {
-    public class Common
+    public class Security
     {
     }
 }

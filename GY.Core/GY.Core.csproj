@@ -31,7 +31,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -39,8 +42,60 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Core.cs" />
+    <Compile Include="BaseModel\ID.cs" />
+    <Compile Include="BaseModel\Label.cs" />
+    <Compile Include="BaseModel\LabelGroup.cs" />
+    <Compile Include="BaseModel\Paging.cs" />
+    <Compile Include="Cache\HttpRunCache.cs" />
+    <Compile Include="Configuration\ExceptionConfig.cs" />
+    <Compile Include="Configuration\GlobalConfig.cs" />
+    <Compile Include="Utils\Encryption\IEncryptionService.cs" />
+    <Compile Include="Utils\Encryption\Impl\MD5Service.cs" />
+    <Compile Include="Web\BaseMasterPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\BaseMessage.cs" />
+    <Compile Include="Web\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DB\SQL\OleDbHelper.cs" />
+    <Compile Include="DB\SQL\SqlHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Web\BaseUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\URLRewriter\BaseModuleRewriter.cs" />
+    <Compile Include="Web\URLRewriter\Config\RewriterConfigSerializerSectionHandler.cs" />
+    <Compile Include="Web\URLRewriter\Config\RewriterConfiguration.cs" />
+    <Compile Include="Web\URLRewriter\Config\RewriterRule.cs" />
+    <Compile Include="Web\URLRewriter\Config\RewriterRuleCollection.cs" />
+    <Compile Include="Web\URLRewriter\ModuleRewriter.cs" />
+    <Compile Include="Web\URLRewriter\RewriterFactoryHandler.cs" />
+    <Compile Include="Web\URLRewriter\RewriterUtils.cs" />
+    <Compile Include="Utils\Serializer\SerializerConverter\DataRowJavaScriptConverter.cs" />
+    <Compile Include="Utils\Serializer\SerializerConverter\DataSetJavaScriptConverter.cs" />
+    <Compile Include="Utils\Serializer\SerializerConverter\DataTableJavaScriptConverter.cs" />
+    <Compile Include="Utils\Serializer\SerializerConverter\DateTimeJavaScriptConverter.cs" />
+    <Compile Include="Utils\Serializer\SerializerConverter\DynamicJsonConverter.cs" />
+    <Compile Include="Utils\Serializer\SerializerConverter\DynamicJsonObject.cs" />
+    <Compile Include="Utils\Serializer\SerializerUtils.cs" />
+    <Compile Include="Utils\Threading\ISyncCaller.cs" />
+    <Compile Include="Utils\Threading\SyncCallerHost.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Doc\ReadMe.txt" />
+    <Content Include="Web\URLRewriter\ReadME.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Context\" />
+    <Folder Include="DB\ADOMD\" />
+    <Folder Include="DB\Mongo\" />
+    <Folder Include="DB\SQL\MyBatis\" />
+    <Folder Include="Support\" />
+    <Folder Include="Utils\Exception\" />
+    <Folder Include="Utils\ExportData\" />
+    <Folder Include="Web\Controls\" />
+    <Folder Include="Web\HttpHandler\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
