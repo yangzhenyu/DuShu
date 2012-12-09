@@ -13,7 +13,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Wap</RootNamespace>
     <AssemblyName>Wap</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
@@ -39,14 +39,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="IBatisNet.Common">
+      <HintPath>..\Lib\Ibatis\IBatisNet.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="IBatisNet.DataMapper">
+      <HintPath>..\Lib\Ibatis\IBatisNet.DataMapper.dll</HintPath>
+    </Reference>
     <Reference Include="log4net">
       <HintPath>..\Lib\Log\log4net.dll</HintPath>
-    </Reference>
-    <Reference Include="MyBatis.Common">
-      <HintPath>..\Lib\Mybatis\MyBatis.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="MyBatis.DataMapper">
-      <HintPath>..\Lib\Mybatis\MyBatis.DataMapper.dll</HintPath>
     </Reference>
     <Reference Include="Spring.Core">
       <HintPath>..\Lib\Spring\Spring.Core.dll</HintPath>
@@ -56,6 +56,7 @@
     </Reference>
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -71,6 +72,41 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="books\book.aspx.cs">
+      <DependentUpon>book.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="books\book.aspx.designer.cs">
+      <DependentUpon>book.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="books\category.aspx.cs">
+      <DependentUpon>category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="books\category.aspx.designer.cs">
+      <DependentUpon>category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="books\chapter.aspx.cs">
+      <DependentUpon>chapter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="books\chapter.aspx.designer.cs">
+      <DependentUpon>chapter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="books\comment.aspx.cs">
+      <DependentUpon>comment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="books\comment.aspx.designer.cs">
+      <DependentUpon>comment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="books\search.aspx.cs">
+      <DependentUpon>search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="books\search.aspx.designer.cs">
+      <DependentUpon>search.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -78,19 +114,84 @@
     <Compile Include="Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
+    <Compile Include="main.Master.cs">
+      <DependentUpon>main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main.Master.designer.cs">
+      <DependentUpon>main.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="user\avatar.aspx.cs">
+      <DependentUpon>avatar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\avatar.aspx.designer.cs">
+      <DependentUpon>avatar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user\comment.aspx.cs">
+      <DependentUpon>comment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\comment.aspx.designer.cs">
+      <DependentUpon>comment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user\mybag.aspx.cs">
+      <DependentUpon>mybag.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\mybag.aspx.designer.cs">
+      <DependentUpon>mybag.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user\profile.aspx.cs">
+      <DependentUpon>profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\profile.aspx.designer.cs">
+      <DependentUpon>profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user\record.aspx.cs">
+      <DependentUpon>record.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\record.aspx.designer.cs">
+      <DependentUpon>record.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user\sysmsg.aspx.cs">
+      <DependentUpon>sysmsg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\sysmsg.aspx.designer.cs">
+      <DependentUpon>sysmsg.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="books\book.aspx" />
+    <Content Include="books\category.aspx" />
+    <Content Include="books\chapter.aspx" />
+    <Content Include="books\comment.aspx" />
+    <Content Include="books\search.aspx" />
     <Content Include="Index.aspx" />
+    <Content Include="user\avatar.aspx" />
+    <Content Include="user\comment.aspx" />
+    <Content Include="user\mybag.aspx" />
+    <Content Include="user\profile.aspx" />
+    <Content Include="user\record.aspx" />
+    <Content Include="user\sysmsg.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="web.config" />
+    <Content Include="main.Master" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
     <None Include="web.Release.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="css\" />
+    <Folder Include="js\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
