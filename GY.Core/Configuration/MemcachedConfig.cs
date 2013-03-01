@@ -60,6 +60,7 @@ namespace GY.Core.Configuration
            get { return (int)this["minConnections"]; }
            set { this["minConnections"] = value; }
        }
+      
        /// <summary>
        ///  
        /// </summary>
@@ -69,6 +70,7 @@ namespace GY.Core.Configuration
            get { return (int)this["maxConnections"]; }
            set { this["maxConnections"] = value; }
        }
+       
        /// <summary>
        ///  
        /// </summary>
@@ -78,6 +80,7 @@ namespace GY.Core.Configuration
            get { return (int)this["socketConnectTimeout"]; }
            set { this["socketConnectTimeout"] = value; }
        }
+      
        /// <summary>
        ///  
        /// </summary>
@@ -87,6 +90,7 @@ namespace GY.Core.Configuration
            get { return (int)this["socketTimeout"]; }
            set { this["socketTimeout"] = value; }
        }
+       
        /// <summary>
        ///  
        /// </summary>
@@ -96,6 +100,7 @@ namespace GY.Core.Configuration
            get { return (int)this["maintenanceSleep"]; }
            set { this["maintenanceSleep"] = value; }
        }
+       
        /// <summary>
        ///  
        /// </summary>
@@ -105,6 +110,7 @@ namespace GY.Core.Configuration
            get { return (bool)this["failover"]; }
            set { this["failover"] = value; }
        }   
+       
        /// <summary>
        ///  
        /// </summary>
@@ -114,6 +120,7 @@ namespace GY.Core.Configuration
            get { return (bool)this["nagle"]; }
            set { this["nagle"] = value; }
        }  
+       
        /// <summary>
        ///  
        /// </summary>
@@ -124,6 +131,7 @@ namespace GY.Core.Configuration
            set { this["enableCompression"] = value; }
        }
 
+      
        /// <summary>
        ///  过期时间点，格式28800000 毫秒 即1000*60*60*8 表示每天 早上8点过期  
        /// </summary>

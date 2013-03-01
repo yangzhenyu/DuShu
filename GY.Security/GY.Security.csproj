@@ -30,7 +30,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\Lib\Log\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -39,8 +43,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\Interface\IUsersService.cs" />
+    <Compile Include="BLL\UsersService.cs" />
+    <Compile Include="Configuration\SecurityConfig.cs" />
+    <Compile Include="DAO\Interface\IUsersDao.cs" />
+    <Compile Include="DAO\UsersDao.cs" />
+    <Compile Include="Model\Users.cs" />
     <Compile Include="Security.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Web\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SQLMaps\Resources.config" />
+    <None Include="SQLMaps\Roles.config" />
+    <None Include="SQLMaps\Users.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GY.Core\GY.Core.csproj">
+      <Project>{cb30546b-7445-4992-985b-5f2be4b6c38f}</Project>
+      <Name>GY.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
