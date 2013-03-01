@@ -72,6 +72,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ibatis", "Ibatis", "{EFA063
 		Lib\Ibatis\IBatisNet.DataMapper.dll = Lib\Ibatis\IBatisNet.DataMapper.dll
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Memcached", "Memcached", "{0731AC18-986D-49E2-A214-E660DAC57762}"
+	ProjectSection(SolutionItems) = preProject
+		Lib\Memcached\Commons.dll = Lib\Memcached\Commons.dll
+		Lib\Memcached\ICSharpCode.SharpZipLib.dll = Lib\Memcached\ICSharpCode.SharpZipLib.dll
+		Lib\Memcached\Memcached.ClientLibrary.dll = Lib\Memcached\Memcached.ClientLibrary.dll
+		Lib\Memcached\memcached.exe = Lib\Memcached\memcached.exe
+		Lib\Memcached\ReadMe.txt = Lib\Memcached\ReadMe.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -118,5 +127,6 @@ Global
 		{20E9707E-E94E-437D-8109-DBA34CCBF2F2} = {EB462CC2-3569-420B-A15A-B4D68D198902}
 		{410CED97-9F10-45D0-8AF2-86A49CFA99DF} = {EB462CC2-3569-420B-A15A-B4D68D198902}
 		{EFA06367-F5E3-4FA4-A7F5-62E0CF5AD172} = {EB462CC2-3569-420B-A15A-B4D68D198902}
+		{0731AC18-986D-49E2-A214-E660DAC57762} = {EB462CC2-3569-420B-A15A-B4D68D198902}
 	EndGlobalSection
 EndGlobal

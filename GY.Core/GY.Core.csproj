@@ -30,14 +30,23 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Commons">
+      <HintPath>..\Lib\Memcached\Commons.dll</HintPath>
+    </Reference>
     <Reference Include="IBatisNet.Common">
       <HintPath>..\Lib\Ibatis\IBatisNet.Common.dll</HintPath>
     </Reference>
     <Reference Include="IBatisNet.DataMapper">
       <HintPath>..\Lib\Ibatis\IBatisNet.DataMapper.dll</HintPath>
     </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\Lib\Memcached\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
     <Reference Include="log4net">
       <HintPath>..\Lib\Log\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Memcached.ClientLibrary">
+      <HintPath>..\Lib\Memcached\Memcached.ClientLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Spring.Core">
       <HintPath>..\Lib\Spring\Spring.Core.dll</HintPath>
@@ -62,8 +71,10 @@
     <Compile Include="BaseModel\LabelGroup.cs" />
     <Compile Include="BaseModel\Paging.cs" />
     <Compile Include="Cache\HttpRunCache.cs" />
+    <Compile Include="Cache\MemcachedHelper.cs" />
     <Compile Include="Configuration\ExceptionConfig.cs" />
     <Compile Include="Configuration\GlobalConfig.cs" />
+    <Compile Include="Configuration\MemcachedConfig.cs" />
     <Compile Include="DB\SQL\IBatis\CustomSqlMapper.cs" />
     <Compile Include="DB\SQL\IBatis\IBatisMapper.cs" />
     <Compile Include="DB\SQL\IBatis\Interface\IIBatisMapper.cs" />
@@ -114,6 +125,9 @@
     <Folder Include="Utils\ExportData\" />
     <Folder Include="Web\Controls\" />
     <Folder Include="Web\HttpHandler\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
