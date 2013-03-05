@@ -1,0 +1,94 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using $DaoName.Interface;
+using GY.Core.DB.SQL.IBatis.Interface;
+using $modelNamespace;
+using GY.Core.BaseModel;
+
+namespace $DaoName
+{
+   public class $tableMapDao : I$tableMapDao
+    {
+       #region [动态配置数据接口]
+       private IIBatisMapper iBatisMapper = null;
+       public IIBatisMapper IBatisMapper
+       {
+            get { return iBatisMapper; }
+            set { iBatisMapper = value; }
+       }
+       #endregion [动态配置数据接口]
+
+        
+       /// <summary>
+       ///  新增数据
+       /// </summary>
+       /// <param name="info"></param>
+       /// <returns></returns>
+       public object Insert($tableMap info)
+       {
+           return IBatisMapper.Insert("Insert$tableMap", info);
+       } 
+
+       /// <summary>
+       ///  根据ID，删除单个实例
+       /// </summary>
+       /// <param name="info"></param>
+       /// <returns></returns>
+       public int Delete($tableMap info)
+       {
+           return IBatisMapper.Delete("Delete$tableMap", info);
+       } 
+        
+       /// <summary>
+       ///  根据ID，更新单个实例
+       /// </summary>
+       /// <param name="info"></param>
+       /// <returns></returns>
+       public int Update($tableMap info)
+       {
+           return IBatisMapper.Update("Update$tableMap", info);
+       }
+
+
+       /// <summary>
+       ///  根据ID，获取单个实例
+       /// </summary>
+       /// <param name="info"></param>
+       /// <returns></returns>
+       public Users GetById($tableMap info)
+       {
+           return IBatisMapper.Load<$tableMap>("Get$tableMapById", info);
+       }
+        
+       /// <summary>
+       ///  分页获取信息列表
+       /// </summary>
+       /// <param name="paging"></param>
+       /// <returns></returns>
+       public IList<$tableMap> GetList(Paging paging)
+       {
+           return IBatisMapper.Select<$tableMap>("Get$tableMapPagingList", paging);
+       }
+	    
+	   /// <summary>
+       ///  按条件获取列表，不分页
+       /// </summary>
+       /// <param name="paging"></param>
+       /// <returns></returns>
+       public IList<$tableMap> GetList($tableMap info)
+       {
+           return IBatisMapper.Select<$tableMap>("Get$tableMapInfo", info);
+       }
+
+       /// <summary>
+       ///  获取表中所有数据
+       /// </summary> 
+       /// <returns></returns>
+       public IList<$tableMap> GetAll()
+       {
+           return IBatisMapper.Select<$tableMap>("Get$tableMapAll");
+       }
+    }
+}

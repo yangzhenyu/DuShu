@@ -1,0 +1,93 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using $modelNamespace;
+using GY.Core.BaseModel; 
+using $BllName.Interface;
+using $DaoName.Interface;
+
+namespace $BllName.BLL
+{
+    public class $tableMapService : I$tableMapService
+    { 
+        #region [Dao数据层]
+        private I$tableMapDao $stableMapDao = null;
+        public I$tableMapDao $tableMapDao
+        {
+            get { return $stableMapDao ; }
+            set {  $stableMapDao = value; }
+        }
+        #endregion [Dao数据层] 
+
+
+        /// <summary>
+        ///  新增数据
+        /// </summary>
+        /// <param name="info"></param>
+        /// <returns></returns>
+        public object Insert($tableMap info)
+        {
+            return $tableMapDao.Insert(info);
+        }
+
+        /// <summary>
+        ///  根据ID，删除单个实例
+        /// </summary>
+        /// <param name="info"></param>
+        /// <returns></returns>
+        public int Delete($tableMap info)
+        {
+            return $tableMapDao.Delete(info);
+        }
+
+        /// <summary>
+        ///  根据ID，更新单个实例
+        /// </summary>
+        /// <param name="info"></param>
+        /// <returns></returns>
+        public int Update($tableMap info)
+        {
+            return $tableMapDao.Update(info);
+        } 
+
+        /// <summary>
+        ///  根据ID，获取单个实例
+        /// </summary>
+        /// <param name="info"></param>
+        /// <returns></returns>
+        public Users GetById($tableMap info)
+        {
+            return $tableMapDao.GetById(info);
+        }
+
+        /// <summary>
+        ///  分页获取信息列表
+        /// </summary>
+        /// <param name="paging"></param>
+        /// <returns></returns>
+        public IList<$tableMap> GetList(Paging paging)
+        {
+            return $tableMapDao.GetList(paging);
+        }
+		 
+	    /// <summary>
+        ///  按条件获取列表，不分页
+        /// </summary>
+        /// <param name="paging"></param>
+        /// <returns></returns>
+        public IList<$tableMap> GetList($tableMap info)
+        {
+           return  $tableMapDao.GetList(info);
+        }
+
+       /// <summary>
+       ///  获取表中所有数据
+       /// </summary> 
+       /// <returns></returns>
+       public IList<$tableMap> GetAll()
+       {
+           return $tableMapDao.GetAll();
+       }
+    }
+}

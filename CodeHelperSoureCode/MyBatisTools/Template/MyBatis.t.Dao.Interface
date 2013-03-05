@@ -1,0 +1,62 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;  
+using $modelNamespace;
+using GY.Core.BaseModel;
+
+namespace $DaoName.Interface
+{
+   public interface I$tableMapDao
+    { 
+
+        /// <summary>
+        ///  新增数据
+        /// </summary>
+        /// <param name="info"></param>
+        /// <returns></returns>
+       object Insert($tableMap info);
+
+        /// <summary>
+        ///  根据ID，删除单个实例
+        /// </summary>
+        /// <param name="info"></param>
+        /// <returns></returns>
+       int Delete($tableMap info);
+
+        /// <summary>
+        ///  根据ID，更新单个实例
+        /// </summary>
+        /// <param name="info"></param>
+        /// <returns></returns>
+       int Update($tableMap info);
+
+
+        /// <summary>
+        ///  根据ID，获取单个实例
+        /// </summary>
+        /// <param name="info"></param>
+        /// <returns></returns>
+       Users GetById($tableMap info);
+
+        /// <summary>
+        ///  分页获取信息列表
+        /// </summary>
+        /// <param name="paging"></param>
+        /// <returns></returns>
+       IList<$tableMap> GetList(Paging paging);
+
+	   /// <summary>
+       ///  按条件获取列表，不分页
+       /// </summary>
+       /// <param name="paging"></param>
+       /// <returns></returns>
+       IList<$tableMap> GetList($tableMap info);
+       
+       /// <summary>
+       ///  获取表中所有数据
+       /// </summary> 
+       /// <returns></returns>
+       IList<$tableMap> GetAll();
+    }
+}

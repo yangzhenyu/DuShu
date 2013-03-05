@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net" >
+  <description></description> 
+  
+  <object id="$tableMapDao" type="$DaoName.$tableMapDao,$DaoName">
+    <property name="IBatisMapper" ref="BaseMapper"/>
+  </object> 
+  <object id="$tableMapService" type="$BllName.$tableMapService, $BllName">
+    <property name="$tableMapDao" ref="$tableMapDao"></property>
+  </object>
+  
+</objects>
