@@ -96,3 +96,5 @@ UpgradeLog*.XML
 /Web/bin
 /WebDemo/WebAdminDemo/WebDemo/WebDemo/obj
 /WebDemo/WebAdminDemo/WebDemo/WebDemo/bin
+/CodeHelperSoureCode/MyBatisTools/bin
+/CodeHelperSoureCode/MyBatisTools/obj

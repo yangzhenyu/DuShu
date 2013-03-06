@@ -1,0 +1,8 @@
+把（xxx.t）模板复制到Template文件下，系统就会自动检测出来模板。
+
+模板制作说明：
+T_format：生成类的文件名
+T_template：模板的内容
+T_infodata：需要替换模板内容的动态标签【$table：表名；$id：主键ID；$insert：添加sql语句；$update：修改sql语句；】
+
+现在只能选择MyBatis.t语句
