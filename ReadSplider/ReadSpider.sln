@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadSpider", "ReadSpider\ReadSpider.csproj", "{968C5746-3B27-4066-AE6C-AFEC41E82B15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadSpider.Common", "ReadSpider.Common\ReadSpider.Common.csproj", "{F494D7DC-D94A-433E-A1BD-5780E54D39AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{968C5746-3B27-4066-AE6C-AFEC41E82B15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{968C5746-3B27-4066-AE6C-AFEC41E82B15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{968C5746-3B27-4066-AE6C-AFEC41E82B15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{968C5746-3B27-4066-AE6C-AFEC41E82B15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F494D7DC-D94A-433E-A1BD-5780E54D39AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F494D7DC-D94A-433E-A1BD-5780E54D39AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F494D7DC-D94A-433E-A1BD-5780E54D39AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F494D7DC-D94A-433E-A1BD-5780E54D39AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
