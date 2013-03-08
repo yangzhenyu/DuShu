@@ -1,11 +1,11 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/main.Master" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="Wap.Index" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master/Main.Master" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="Wap.Index" %>
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
     <meta charset="utf-8" />
     <title>塔读触屏版</title>
-  
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
@@ -511,4 +511,4 @@
             </footer>
         </section>
     </footer>
-  </asp:Content>
+</asp:Content>
