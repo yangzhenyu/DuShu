@@ -326,11 +326,8 @@
 }
 .ui-body-c,
 .ui-overlay-c {
-	border: 1px solid 		#aaa /*{c-body-border}*/;
-	color: 					#333 /*{c-body-color}*/;
-	text-shadow: 0 /*{c-body-shadow-x}*/ 1px /*{c-body-shadow-y}*/ 0 /*{c-body-shadow-radius}*/ #fff /*{c-body-shadow-color}*/;
-	background: 			#f9f9f9 /*{c-body-background-color}*/;
-	background-image: -webkit-gradient(linear, left top, left bottom, from( #f9f9f9 /*{c-body-background-start}*/), to( #eee /*{c-body-background-end}*/)); /* Saf4+, Chrome */
+	border: 1px solid 		#aaa /*{c-body-border}*/; 
+ 	background-image: -webkit-gradient(linear, left top, left bottom, from( #f9f9f9 /*{c-body-background-start}*/), to( #eee /*{c-body-background-end}*/)); /* Saf4+, Chrome */
 	background-image: -webkit-linear-gradient( #f9f9f9 /*{c-body-background-start}*/, #eee /*{c-body-background-end}*/); /* Chrome 10+, Saf5.1+ */
 	background-image:    -moz-linear-gradient( #f9f9f9 /*{c-body-background-start}*/, #eee /*{c-body-background-end}*/); /* FF3.6 */
 	background-image:     -ms-linear-gradient( #f9f9f9 /*{c-body-background-start}*/, #eee /*{c-body-background-end}*/); /* IE10 */
@@ -353,7 +350,7 @@
 }
 .ui-body-c .ui-link {
 	color: #2489ce /*{c-body-link-color}*/;
-	font-weight: bold;
+	font-weight: normal;
 }
 .ui-body-c .ui-link:visited {
     color: #2489ce /*{c-body-link-visited}*/;
