@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Web", "Web\", "{81A9077B-02F3-4462-A07D-20A124D00F48}"
 	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv2.0"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
 		ProjectReferences = "{9cb50ea9-11d2-406a-a7ca-184a8d76cf33}|DuShu.BLL.dll;{be01e99b-6f6e-47c5-841a-99a109576ea5}|DuShu.DAO.dll;{63621773-26fc-4eef-93d8-12e8a80e9e1d}|DuShu.Model.dll;{712ff974-adea-4d1f-ad76-92eb429484a8}|DuShu.VO.dll;{cb30546b-7445-4992-985b-5f2be4b6c38f}|GY.Core.dll;{1ce126d7-fc10-4e04-a4bb-4bcbba24cba7}|GY.Security.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/Web"
 		Debug.AspNetCompiler.PhysicalPath = "Web\"
@@ -59,6 +59,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Spring", "Spring", "{20E970
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Log", "Log", "{410CED97-9F10-45D0-8AF2-86A49CFA99DF}"
 	ProjectSection(SolutionItems) = preProject
+		Lib\Log\Common.Logging.dll = Lib\Log\Common.Logging.dll
+		Lib\Log\Common.Logging.Log4Net.dll = Lib\Log\Common.Logging.Log4Net.dll
 		Lib\Log\log4net.dll = Lib\Log\log4net.dll
 	EndProjectSection
 EndProject

@@ -39,8 +39,49 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BLL.cs" />
+    <Compile Include="AdsService.cs" />
+    <Compile Include="CustomersService.cs" />
+    <Compile Include="Interface\IAdsService.cs" />
+    <Compile Include="Interface\ICustomersService.cs" />
+    <Compile Include="Interface\IResourcesService.cs" />
+    <Compile Include="Interface\IRolesinresourcesService.cs" />
+    <Compile Include="Interface\IRolesService.cs" />
+    <Compile Include="Interface\ISqladminService.cs" />
+    <Compile Include="Interface\ITypegroupService.cs" />
+    <Compile Include="Interface\ITypeService.cs" />
+    <Compile Include="Interface\IUsersinrolesService.cs" />
+    <Compile Include="Interface\IUsersService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResourcesService.cs" />
+    <Compile Include="RolesinresourcesService.cs" />
+    <Compile Include="RolesService.cs" />
+    <Compile Include="SqladminService.cs" />
+    <Compile Include="TypegroupService.cs" />
+    <Compile Include="TypeService.cs" />
+    <Compile Include="UsersinrolesService.cs" />
+    <Compile Include="UsersService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DuShu.DAO\DuShu.DAO.csproj">
+      <Project>{be01e99b-6f6e-47c5-841a-99a109576ea5}</Project>
+      <Name>DuShu.DAO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DuShu.Model\DuShu.Model.csproj">
+      <Project>{63621773-26fc-4eef-93d8-12e8a80e9e1d}</Project>
+      <Name>DuShu.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DuShu.VO\DuShu.VO.csproj">
+      <Project>{712ff974-adea-4d1f-ad76-92eb429484a8}</Project>
+      <Name>DuShu.VO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GY.Core\GY.Core.csproj">
+      <Project>{cb30546b-7445-4992-985b-5f2be4b6c38f}</Project>
+      <Name>GY.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GY.Security\GY.Security.csproj">
+      <Project>{1ce126d7-fc10-4e04-a4bb-4bcbba24cba7}</Project>
+      <Name>GY.Security</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
