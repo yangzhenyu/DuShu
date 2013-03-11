@@ -39,27 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdsDao.cs" />
-    <Compile Include="CustomersDao.cs" />
-    <Compile Include="Interface\IAdsDao.cs" />
-    <Compile Include="Interface\ICustomersDao.cs" />
-    <Compile Include="Interface\IResourcesDao.cs" />
-    <Compile Include="Interface\IRolesDao.cs" />
-    <Compile Include="Interface\IRolesinresourcesDao.cs" />
-    <Compile Include="Interface\ISqladminDao.cs" />
-    <Compile Include="Interface\ITypeDao.cs" />
-    <Compile Include="Interface\ITypegroupDao.cs" />
-    <Compile Include="Interface\IUsersDao.cs" />
-    <Compile Include="Interface\IUsersinrolesDao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ResourcesDao.cs" />
-    <Compile Include="RolesDao.cs" />
-    <Compile Include="RolesinresourcesDao.cs" />
-    <Compile Include="SqladminDao.cs" />
-    <Compile Include="TypeDao.cs" />
-    <Compile Include="TypegroupDao.cs" />
-    <Compile Include="UsersDao.cs" />
-    <Compile Include="UsersinrolesDao.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DuShu.Model\DuShu.Model.csproj">
