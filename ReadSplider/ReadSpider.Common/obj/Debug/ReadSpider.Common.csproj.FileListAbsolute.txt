@@ -1,0 +1,13 @@
+D:\自己的产品\读书\抓数据工具\ReadSpider\ReadSpider.Common\bin\Debug\ReadSpider.Common.dll
+D:\自己的产品\读书\抓数据工具\ReadSpider\ReadSpider.Common\bin\Debug\ReadSpider.Common.pdb
+D:\自己的产品\读书\抓数据工具\ReadSpider\ReadSpider.Common\obj\Debug\ReadSpider.Common.csprojResolveAssemblyReference.cache
+D:\自己的产品\读书\抓数据工具\ReadSpider\ReadSpider.Common\obj\Debug\ReadSpider.Common.dll
+D:\自己的产品\读书\抓数据工具\ReadSpider\ReadSpider.Common\obj\Debug\ReadSpider.Common.pdb
+D:\自己的产品\读书\抓数据工具\ReadSpider\ReadSpider.Common\bin\Debug\HelloData.FrameWork.dll
+D:\自己的产品\读书\抓数据工具\ReadSpider\ReadSpider.Common\bin\Debug\log4net.dll
+D:\自己的产品\读书\抓数据工具\ReadSpider\ReadSpider.Common\bin\Debug\Aspose.Cells.dll
+D:\自己的产品\读书\抓数据工具\ReadSpider\ReadSpider.Common\bin\Debug\Newtonsoft.Json.Net20.dll
+D:\自己的产品\读书\抓数据工具\ReadSpider\ReadSpider.Common\bin\Debug\HelloData.FrameWork.pdb
+D:\自己的产品\读书\抓数据工具\ReadSpider\ReadSpider.Common\bin\Debug\ReadSpider.Common.dll.config
+D:\自己的产品\读书\抓数据工具\ReadSpider\ReadSpider.Common\bin\Debug\HelloData.FWCommon.dll
+D:\自己的产品\读书\抓数据工具\ReadSpider\ReadSpider.Common\bin\Debug\HelloData.FWCommon.pdb

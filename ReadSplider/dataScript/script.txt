@@ -1,0 +1,101 @@
+ 
+GO
+/****** Object:  Table [dbo].[GY_Site]    Script Date: 03/07/2013 22:48:42 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[GY_Site](
+	[ID] [int] IDENTITY(1,1) NOT NULL,
+	[SiteName] [varchar](50) NULL,
+	[SiteUrl] [varchar](500) NULL,
+	[SpliderDeep] [int] NULL,
+	[IsNotSplideParms] [bit] NULL,
+	[IsActive] [bit] NULL,
+	[IsSplider] [bit] NULL,
+	[LastSplider] [datetime] NULL,
+	[BookReg] [varchar](1000) NULL,
+	[BookRegIndex] [int] NULL,
+	[ChapterReg] [varchar](1000) NULL,
+	[ChapterRegIndex] [int] NULL,
+	[ContentReg] [varchar](1000) NULL,
+	[ContentRegIndex] [int] NULL,
+	[IsSeriesReg] [varchar](1000) NULL,
+	[BookWriter] [varchar](1000) NULL,
+	[ContentUrl] [varchar](500) NULL,
+	[ChapterUrl] [varchar](500) NULL,
+ CONSTRAINT [PK_read_site] PRIMARY KEY CLUSTERED 
+(
+	[ID] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+SET ANSI_PADDING OFF
+GO
+/****** Object:  Table [dbo].[GY_Chapter]    Script Date: 03/07/2013 22:48:42 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[GY_Chapter](
+	[ID] [int] IDENTITY(1,1) NOT NULL,
+	[ChapterName] [varchar](500) NULL,
+	[ChapterID] [int] NULL,
+	[SiteID] [int] NULL,
+	[BookID] [int] NULL,
+	[UpdateDate] [datetime] NULL,
+	[ChapterUrl] [varchar](500) NULL,
+	[ChapterContent] [text] NULL,
+	[ChapterContentUrl] [varchar](500) NULL,
+	[IsSpilder] [bit] NULL,
+ CONSTRAINT [PK_Read_Chapter] PRIMARY KEY CLUSTERED 
+(
+	[ID] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+SET ANSI_PADDING OFF
+GO
+/****** Object:  Table [dbo].[GY_Book]    Script Date: 03/07/2013 22:48:42 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[GY_Book](
+	[ID] [int] IDENTITY(1,1) NOT NULL,
+	[BookID] [int] NULL,
+	[SiteID] [int] NULL,
+	[BookName] [varchar](100) NULL,
+	[BookWriter] [varchar](50) NULL,
+	[UpdateDate] [datetime] NULL,
+	[IsActive] [bit] NULL,
+	[IsSerialize] [bit] NULL,
+	[LastChapteID] [int] NULL,
+	[BookUrl] [varchar](500) NULL,
+	[ChapterUrl] [varchar](500) NULL,
+ CONSTRAINT [PK_Read_Book] PRIMARY KEY CLUSTERED 
+(
+	[ID] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+SET ANSI_PADDING OFF
+GO
+/****** Object:  Default [DF_Read_Book_IsSerialize]    Script Date: 03/07/2013 22:48:42 ******/
+ALTER TABLE [dbo].[GY_Book] ADD  CONSTRAINT [DF_Read_Book_IsSerialize]  DEFAULT ((1)) FOR [IsSerialize]
+GO
+/****** Object:  Default [DF_Read_Chapter_IsSpilder]    Script Date: 03/07/2013 22:48:42 ******/
+ALTER TABLE [dbo].[GY_Chapter] ADD  CONSTRAINT [DF_Read_Chapter_IsSpilder]  DEFAULT ((0)) FOR [IsSpilder]
+GO
+/****** Object:  Default [DF_Read_Site_SpliderDeep]    Script Date: 03/07/2013 22:48:42 ******/
+ALTER TABLE [dbo].[GY_Site] ADD  CONSTRAINT [DF_Read_Site_SpliderDeep]  DEFAULT ((1)) FOR [SpliderDeep]
+GO
+/****** Object:  Default [DF_Read_Site_IsNotSplideParms]    Script Date: 03/07/2013 22:48:42 ******/
+ALTER TABLE [dbo].[GY_Site] ADD  CONSTRAINT [DF_Read_Site_IsNotSplideParms]  DEFAULT ((1)) FOR [IsNotSplideParms]
+GO
