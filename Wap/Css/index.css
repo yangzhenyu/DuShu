@@ -149,7 +149,7 @@
 .p8 ul {
 	border-bottom-color: rgb(255, 255, 255); border-bottom-width: 1px; border-bottom-style: solid; list-style-type: none;
 }
-.p8 li { height: 48px;background: url('../images/arrow.png') no-repeat right; margin: 0px 20px; padding: 10px 0px 4px; line-height: 34px; border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(204, 204, 204); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; }
+.p8 li { height: 48px;background: url('../images/arrow.png') no-repeat right; margin: 0px 20px; padding: 10px 0px 4px; line-height: 34px; border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(204, 204, 204); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid;overflow: hidden; }
 .p8 li a {
 	 
 }
@@ -180,7 +180,8 @@
 .p8 .title {
 	width: 78%; display: inline-block;
     font-weight: normal;
-    color: black; 
+    color: black;
+    height: 48px;
 }
 .p8 .title_b {
 	color: rgb(119, 119, 119); margin-left: 18px;

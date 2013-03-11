@@ -25,8 +25,7 @@
         <div class="top">
             <div class="logo">
                 <a href="/?r=mobile/index">
-                    <img width="150" src="http://static2.zhufukc.com/img/base/logo-small.png?1" /></a>
-            </div>
+            <img width="150" height="45" src="../images/logo.png" /></a>   </div>
             <div class="uinfo">
                 <a href="/?r=mobile/login"  data-role="button" data-inline="true" data-theme="d"  class="action">登录</a>
             </div>

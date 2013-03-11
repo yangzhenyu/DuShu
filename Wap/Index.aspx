@@ -1,52 +1,12 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="Wap.Index" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Index.Master" CodeBehind="Index.aspx.cs" Inherits="Wap.Index" %>
 
-<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head id="Head1" runat="server">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title></title>
-    <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-touch-fullscreen" content="YES">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <script src="Js/jquery.js"></script>
-    <script src="Js/jquery.mobile-1.3.0.js"></script>
-    <link href="Css/jquery.mobile-1.3.0.css" rel="stylesheet" />
 
-    <link href="Css/common.css" rel="stylesheet" />
-    <link href="Css/index.css" rel="stylesheet" />
-    <script src="Js/index.js"></script>
-</head>
-<body>
 
-    <header>
-        <div class="top">
-            <div class="logo">
-                <a href="/?r=mobile/index">
-                    <img width="150" src="http://static2.zhufukc.com/img/base/logo-small.png?1" /></a>
-            </div>
-            <%--  <div class="uinfo">
-                <a href="User/Login.aspx" data-role="button" data-inline="true" data-theme="f" class="action">登录</a>
-            </div>--%>
-            <ul id="nav">
 
-                <li id="nav1"><a class="ui-link" href="http://m.triviala.com/user/quizzes/create"><span>下载</span></a></li>
-                <li id="nav2"><a class="ui-link" href="http://m.triviala.com/signin"><span>用户</span></a></li>
-            </ul>
-        </div>
-        <div data-role="header" class="clear">
-            <div data-role="navbar">
-                <ul>
-                    <li><a href="/?r=mobile/recipes" class="headmenu">首页</a></li>
-                    <li><a href="/?r=mobile/cookbooks" class="headmenu">分类</a></li>
-                    <li><a href="/?r=mobile/newslist" class="headmenu">书库</a></li>
-                    <li><a href="/?r=mobile/newslist" class="headmenu">排行</a></li>
-                    <li><a href="/?r=mobile/newslist" class="headmenu">搜索</a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+
     <div id="searchform" style="padding: 5px 0; display: block;">
         <form action="/?r=mobile/search" method="get">
             <input type="hidden" name="type" value="1" />
@@ -60,7 +20,7 @@
             <a href="#" class="rc3 ft22 ml_25">重生</a>
             <a href="#" class="rc4 ft22 ml_25">美女</a>
             <a href="#" class="rc5 ft22 ml_25">重生</a>
-            <a href="#" class="rc6 ft22 ml_25">美女</a>
+
         </article>
     </div>
 
@@ -312,23 +272,4 @@
         <div class="clearfix"></div>
     </div>
     <div class="b_return"><a class="ft24 ret_btn" href="#body"><span class="b_return_i">︽</span>回顶部 </a></div>
-    <footer class="mt_20">
-        <section class="p9">
-
-            <nav class="wap">请在wifi或3G下浏览(<a href="http://wap.tadu.com" alt="wap.tadu.com">点此访问简版</a>) </nav>
-            <nav>
-                <ul>
-                    <li><a href="/t/index/">首页</a><span class="line "></span> </li>
-                    <li><a href="/t/feedback/">建议</a><span class="line"></span> </li>
-                    <li><a href="/t/service/">客服</a><span class="line"></span> </li>
-                    <li><a href="/t/help/">帮助</a> </li>
-                </ul>
-            </nav>
-            <div>
-                <p>塔读tadu.com&nbsp;<span id="time"></span> </p>
-                <p>京ICP备09017823号 </p>
-            </div>
-        </section>
-    </footer>
-</body>
-</html>
+</asp:Content>

@@ -10,13 +10,9 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-touch-fullscreen" content="YES">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <script src="Js/jquery.js"></script>
-    <script src="Js/jquery.mobile-1.3.0.js"></script>
-    <link href="Css/jquery.mobile-1.3.0.css" rel="stylesheet" />
+    
 
-    <link href="Css/common.css" rel="stylesheet" />
-    <link href="Css/index.css" rel="stylesheet" />
-    <script src="Js/index.js"></script>
+    <script src="script/seajs/sea.js" data-main="main.js"></script>
 </head>
 <body>
 
