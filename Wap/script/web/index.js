@@ -1,4 +1,6 @@
-﻿$(function () {
+﻿define(function (require, exports, module) {
+    var $ = require('lib/jquery.js');
+     
     $("#home_banner").scroll({
         width: 480,
         imgCls: ".banner_list",
@@ -28,7 +30,7 @@
             c.removeClass("current");
             $(c[e - 1]).addClass("current");
         },
-		0);
+        0);
     }
     $(".blockContainer").each(function () {
         var c = $(this);
@@ -36,9 +38,9 @@
         var f = d.length;
         c.find(".mark a").each(function (g, h) {
             $(h).bind("click",
-			function () {
-			    b.call(c, g + 1);
-			});
+            function () {
+                b.call(c, g + 1);
+            });
         });
         if (f <= 1) {
             return;
@@ -55,7 +57,7 @@
     });
     function a() {
         var e = {},
-		c = $(this).find(".mark a");
+        c = $(this).find(".mark a");
         e.len = c.length;
         for (var d = 0; d < e.len; d++) {
             if (/current/.test(c[d].className)) {
@@ -86,4 +88,5 @@
             }
         }
     });
+ 
 });

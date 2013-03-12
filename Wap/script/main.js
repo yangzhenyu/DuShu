@@ -3,9 +3,9 @@ seajs.config({
     alias: {
 
         'jquery': 'lib/jquery.js',
-        'jqueryMobile': 'lib/jquery.mobile-1.3.0.min'
+        'bootstrap': 'lib/bootstrap'
     },
-    preload: [/*'plugin-base','plugin-json',*/'jquery', 'jqueryMobile', (''/*'combineLibs'*/)]
+    preload: ['jquery', 'bootstrap']
 });
 define(function (require, exports, module) {
     require('./init').run();

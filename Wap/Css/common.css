@@ -1,6 +1,10 @@
 ﻿ul { list-style: none; padding: 0px; margin: 0; }
 em { font-style: normal; }
-body { font-family: "微软雅黑","宋体", Arial, Helvetica, sans-serif; }
+body {
+    font-family: "微软雅黑" , "宋体" , Arial, Helvetica, sans-serif;
+    background-image: url('../images/bg.gif');
+    background-color: rgb(242, 240, 233);
+}
 table { border-collapse: collapse; border-spacing: 0px; }
 button { border: currentColor; font-family: "微软雅黑"; }
 a { color: black; text-decoration: none; }
@@ -115,7 +119,7 @@ a.rc6:active { color: rgb(185, 162, 84); text-decoration: none; }
 
 .fl { float: left; }
 .fr { float: right; }
-.menu .title { text-shadow: 0px 2px 1px white; font-weight: bolder; }
+.menu .title { text-shadow: 0px 2px 1px white;  }
 .p4 .menu { padding: 0px 20px; height: 51px; line-height: 51px; margin-top: 1px; }
 .headmenu span.ui-btn-text { font-size: 16px; }
 .b_return {
