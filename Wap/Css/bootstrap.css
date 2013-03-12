@@ -5944,8 +5944,7 @@ a.badge:focus {
 }
 
 .carousel {
-  position: relative;
-  margin-bottom: 20px;
+  position: relative; 
   line-height: 1;
 }
 
