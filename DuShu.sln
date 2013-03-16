@@ -4,7 +4,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Web", "Web\", "{81A9077B-02F3-4462-A07D-20A124D00F48}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+<<<<<<< HEAD
 		ProjectReferences = "{9cb50ea9-11d2-406a-a7ca-184a8d76cf33}|DuShu.BLL.dll;{be01e99b-6f6e-47c5-841a-99a109576ea5}|DuShu.DAO.dll;{63621773-26fc-4eef-93d8-12e8a80e9e1d}|DuShu.Model.dll;{712ff974-adea-4d1f-ad76-92eb429484a8}|DuShu.VO.dll;{1ce126d7-fc10-4e04-a4bb-4bcbba24cba7}|GY.Security.dll;{CB30546B-7445-4992-985B-5F2BE4B6C38F}|GY.Core.dll;"
+=======
+		ProjectReferences = "{9cb50ea9-11d2-406a-a7ca-184a8d76cf33}|DuShu.BLL.dll;{be01e99b-6f6e-47c5-841a-99a109576ea5}|DuShu.DAO.dll;{63621773-26fc-4eef-93d8-12e8a80e9e1d}|DuShu.Model.dll;{712ff974-adea-4d1f-ad76-92eb429484a8}|DuShu.VO.dll;{cb30546b-7445-4992-985b-5f2be4b6c38f}|GY.Core.dll;{1ce126d7-fc10-4e04-a4bb-4bcbba24cba7}|GY.Security.dll;"
+>>>>>>> 90e734a66fc1660132168527e4b493904a4cb151
 		Debug.AspNetCompiler.VirtualPath = "/Web"
 		Debug.AspNetCompiler.PhysicalPath = "Web\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Web\"
@@ -59,6 +63,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Spring", "Spring", "{20E970
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Log", "Log", "{410CED97-9F10-45D0-8AF2-86A49CFA99DF}"
 	ProjectSection(SolutionItems) = preProject
+		Lib\Log\Common.Logging.dll = Lib\Log\Common.Logging.dll
+		Lib\Log\Common.Logging.Log4Net.dll = Lib\Log\Common.Logging.Log4Net.dll
 		Lib\Log\log4net.dll = Lib\Log\log4net.dll
 	EndProjectSection
 EndProject
@@ -80,6 +86,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Memcached", "Memcached", "{
 		Lib\Memcached\memcached.exe = Lib\Memcached\memcached.exe
 		Lib\Memcached\ReadMe.txt = Lib\Memcached\ReadMe.txt
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DuShu.Web.Code", "DuShu.Web.Code\DuShu.Web.Code.csproj", "{FB7D47C4-0827-4198-9BC6-53BFFF4576E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -119,6 +127,10 @@ Global
 		{1CE126D7-FC10-4E04-A4BB-4BCBBA24CBA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1CE126D7-FC10-4E04-A4BB-4BCBBA24CBA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1CE126D7-FC10-4E04-A4BB-4BCBBA24CBA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB7D47C4-0827-4198-9BC6-53BFFF4576E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB7D47C4-0827-4198-9BC6-53BFFF4576E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB7D47C4-0827-4198-9BC6-53BFFF4576E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB7D47C4-0827-4198-9BC6-53BFFF4576E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

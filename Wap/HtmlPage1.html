@@ -1,0 +1,127 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="YES">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>主妇美食</title>
+    <link rel="stylesheet" href="http://static2.zhufukc.com/css/mobile/jquery.mobile-1.1.0-mini.css" />
+    <script src="http://lib.sinaapp.com/js/jquery/1.7/jquery.min.js"></script>
+    <script src="http://static2.zhufukc.com/js/mobile/jquery.mobile-1.1.0-mini.js"></script>
+    <link rel="apple-touch-icon" href="http://static2.zhufukc.com/img/base/mobileicon.png?1" />
+    <link rel="apple-touch-startup-image" href="http://static2.zhufukc.com/img/base/mobilestartup.jpg?1">
+</head>
+<body>
+    <div data-role="page" id="index">
+        <div class="top">
+            <div class="logo">
+                <a href="/?r=mobile/index">
+                    <img width="150" src="http://static2.zhufukc.com/img/base/logo-small.png?1" /></a>
+            </div>
+            <div class="uinfo">
+                <a href="/?r=mobile/login" class="action">登录</a> <a href="/?r=mobile/reg" class="action">注册</a>
+            </div>
+        </div>
+        <div style="clear: both"></div>
+        <div data-role="header">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="/?r=mobile/recipes" class="zhu-ui-bar-a">主妇菜谱</a></li>
+                    <li><a href="/?r=mobile/cookbooks" class="zhu-ui-bar-a">精选菜单</a></li>
+                    <li><a href="/?r=mobile/newslist" class="zhu-ui-bar-a">厨房百科</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="searchform" style="padding: 5px 0; display: block;">
+            <form action="/?r=mobile/search" method="get">
+                <input type="hidden" name="type" value="1" />
+                <div class="ui-input-search ui-shadow-inset ui-btn-corner-all ui-btn-shadow ui-icon-searchfield ui-body-c">
+                    <input type="search" data-role="none" name="key" id="search" placeholder="搜索菜谱或厨房百科" class="ui-input-text ui-body-c" />
+                </div>
+            </form>
+        </div>
+        <div class="zhu-slide">
+            <div class="content">
+                <ul class="img">
+                    <li><a href="/?r=mobile/RecipeDetails&recipeid=17598">
+                        <img src="http://img.zhufukc.com/images/other/20130105/21ed0a71817e23a980180e92f69acc12.jpg" class="slideimg" width="310" height="176" /></a></li>
+                    <li><a href="/?r=mobile/RecipeDetails&recipeid=16865">
+                        <img src="http://img.zhufukc.com/images/other/20121015/2cf616051f0778d9761b6802e9a2a6e1.jpg" class="slideimg" width="310" height="176" /></a></li>
+                    <li><a href="/?r=mobile/RecipeDetails&recipeid=9521">
+                        <img src="http://img.zhufukc.com/images/blank.gif" _src="http://img.zhufukc.com/images/other/20120917/fe26d895721d161cc8c0759ce90c6e3c.jpg" class="slideimg" width="310" height="176" /></a></li>
+                    <li><a href="/?r=mobile/RecipeDetails&recipeid=13836">
+                        <img src="http://img.zhufukc.com/images/blank.gif" _src="http://img.zhufukc.com/images/other/20120819/a3843da5892605d0eaef72ee938e960b.jpg" class="slideimg" width="310" height="176" /></a></li>
+                </ul>
+                <div class="action">
+                    <div class="prev pg-btn"><a>上一页</a></div>
+                    <div class="trigs">
+                        <ul>
+                            <li class="cur">1</li>
+                            <li class="">2</li>
+                            <li class="">3</li>
+                            <li class="">4</li>
+                        </ul>
+                    </div>
+                    <div class="next pg-btn"><a>下一页</a></div>
+                </div>
+            </div>
+        </div>
+        <div data-role="content" style="margin-top: 10px; padding-top: 15px;">
+            <ul data-role="listview">
+                <li data-role="list-divider">最新菜谱</li>
+                <li><a href="/?r=mobile/RecipeDetails&recipeid=16371">
+                    <img src="http://img.zhufukc.com/images/blank.gif" _src="http://img.zhufukc.com/images/kc/2012-09-03/7ad8c4c342841caf46efe960bc00d9a7.jpg" class="lazy" />
+                    <h3>“晶心”土豆泥</h3>
+                    <p>土豆 黄瓜 胡萝卜 黑胡椒 </p>
+                </a></li>
+                <li><a href="/?r=mobile/RecipeDetails&recipeid=16386">
+                    <img src="http://img.zhufukc.com/images/blank.gif" _src="http://img.zhufukc.com/images/kc/2012-09-04/99087a2f50549f7783d61373e4d644f5.jpg" class="lazy" />
+                    <h3>干煸椒盐排骨</h3>
+                    <p>仔排 葱 姜 干辣椒 </p>
+                </a></li>
+                <li><a href="/?r=mobile/RecipeDetails&recipeid=16412">
+                    <img src="http://img.zhufukc.com/images/blank.gif" _src="http://img.zhufukc.com/images/kc/2012-09-05/28f88234cef85d47bb091c8d68b28592.jpg" class="lazy" />
+                    <h3>薄荷炒蛋</h3>
+                    <p>新鲜薄荷叶 鸡蛋 </p>
+                </a></li>
+                <li><a href="/?r=mobile/RecipeDetails&recipeid=16421">
+                    <img src="http://img.zhufukc.com/images/blank.gif" _src="http://img.zhufukc.com/images/kc/2012-09-06/d31c20d48234340dee0a5737609d2b7b.jpg" class="lazy" />
+                    <h3>香肠热狗</h3>
+                    <p>小餐包 香肠 生菜叶 沙拉酱 </p>
+                </a></li>
+            </ul>
+            <ul data-role="listview" style="margin-top: 20px;">
+                <li data-role="list-divider">推荐百科</li>
+                <li><a href="/?r=mobile/NewsDetails&newsid=2944">
+                    <h3>益母草煮鸡蛋 痛经者食疗佳品</h3>
+                    <p>益母草含有多种微量元素。性味辛苦凉，具有活血、法瘀</p>
+                </a></li>
+                <li><a href="/?r=mobile/NewsDetails&newsid=2953">
+                    <h3>饮食调养防经期腰痛 3药膳补肾强腰</h3>
+                    <p>女人易腰疼，尤其是在经期，有时不是因为劳累，可能是</p>
+                </a></li>
+                <li><a href="/?r=mobile/NewsDetails&newsid=3735">
+                    <h3>不同的菜肴有不同的刀法</h3>
+                    <p>1、直切：操作要领是，用刀地砌下去，一刀切断，切时既</p>
+                </a></li>
+                <li><a href="/?r=mobile/NewsDetails&newsid=3744">
+                    <h3>不想煮出“黑”茄子有妙招</h3>
+                    <p>许多人认为，茄子炒后必然变黑，其实不然。只要烹调方</p>
+                </a></li>
+            </ul>
+            <div>&nbsp;</div>
+        </div>
+        <div data-role="footer" class="footer-docs" data-theme="c">
+            <p>
+                CoryRight &copy; 2012 &nbsp; <a href="http://wap.zhufukc.com/" data-role="none" rel="external">3G版</a> | 触屏版  | <a href="http://www.zhufukc.com/?from=mobile" data-role="none" rel="external">网站版</a>
+            </p>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc711e314dbccd15fc0ea7dc1428b189e' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+</body>
+</html>

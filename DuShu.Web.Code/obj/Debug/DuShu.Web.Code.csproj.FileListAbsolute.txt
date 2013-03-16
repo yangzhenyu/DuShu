@@ -1,6 +1,5 @@
 D:\自己的产品\读书\Dushugit\DuShu.Web.Code\bin\Debug\DuShu.Web.Code.dll
 D:\自己的产品\读书\Dushugit\DuShu.Web.Code\bin\Debug\DuShu.Web.Code.pdb
-D:\自己的产品\读书\Dushugit\DuShu.Web.Code\bin\Debug\Newtonsoft.Json.Net20.dll
 D:\自己的产品\读书\Dushugit\DuShu.Web.Code\obj\Debug\DuShu.Web.Code.csprojResolveAssemblyReference.cache
 D:\自己的产品\读书\Dushugit\DuShu.Web.Code\obj\Debug\DuShu.Web.Code.dll
 D:\自己的产品\读书\Dushugit\DuShu.Web.Code\obj\Debug\DuShu.Web.Code.pdb

@@ -226,7 +226,7 @@
             this.DAOtext.Name = "DAOtext";
             this.DAOtext.Size = new System.Drawing.Size(147, 21);
             this.DAOtext.TabIndex = 18;
-            this.DAOtext.Text = "DuShuDAO";
+            this.DAOtext.Text = "DuShu.DAO";
             // 
             // ModelText
             // 

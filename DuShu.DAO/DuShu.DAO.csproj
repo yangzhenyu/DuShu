@@ -39,8 +39,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DuShu.Model\DuShu.Model.csproj">
+      <Project>{63621773-26fc-4eef-93d8-12e8a80e9e1d}</Project>
+      <Name>DuShu.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GY.Core\GY.Core.csproj">
+      <Project>{cb30546b-7445-4992-985b-5f2be4b6c38f}</Project>
+      <Name>GY.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

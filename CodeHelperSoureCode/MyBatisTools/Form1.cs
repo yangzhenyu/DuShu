@@ -350,8 +350,8 @@ namespace MyBatisTools
             string tableMap = tablenameArray.Length > 1 ? tablenameArray.GetValue(1).ToString() : tableName;
             string theLowerKey = tableMap.Substring(0, 1).ToLower();
             string theUpperKey = tableMap.Substring(0, 1).ToUpper();
-            tableMap = theUpperKey + tableMap.Substring(1, tableMap.Length - 1).ToLower();
-            string stableMap = theLowerKey + tableMap.Substring(1, tableMap.Length - 1).ToLower();
+            tableMap = theUpperKey + tableMap.Substring(1, tableMap.Length - 1).ToString();
+            string stableMap = theLowerKey + tableMap.Substring(1, tableMap.Length - 1).ToString();
             string className = ModelText.Text.Trim() + "." + tableMap;
             string T_namespace = ModelText.Text.Trim();
             T_format = T_format.Replace("$tableMap", tableMap);
@@ -438,8 +438,8 @@ namespace MyBatisTools
                 string saveDAO = DAOtext.Text.Trim();
                 string saveDAOInterface = DAOtext.Text.Trim() + @"\Interface";
                 string saveModel = ModelText.Text.Trim();
-                string saveSqlMap = "SqlMap";
-                string saveObject = "Object";
+                string saveSqlMap = "SqlMaps";
+                string saveObject = "Objects";
                 saveValue(saveBll);
                 saveValue(saveBllInterface);
                 saveValue(saveDAO);
