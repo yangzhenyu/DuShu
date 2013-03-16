@@ -11,3 +11,11 @@ D:\自己的产品\读书\抓数据工具\ReadSpider\ReadSpider.Common\bin\Debug
 D:\自己的产品\读书\抓数据工具\ReadSpider\ReadSpider.Common\bin\Debug\ReadSpider.Common.dll.config
 D:\自己的产品\读书\抓数据工具\ReadSpider\ReadSpider.Common\bin\Debug\HelloData.FWCommon.dll
 D:\自己的产品\读书\抓数据工具\ReadSpider\ReadSpider.Common\bin\Debug\HelloData.FWCommon.pdb
+E:\projects\DuShu\ReadSplider\ReadSpider.Common\bin\Debug\ReadSpider.Common.dll.config
+E:\projects\DuShu\ReadSplider\ReadSpider.Common\bin\Debug\ReadSpider.Common.dll
+E:\projects\DuShu\ReadSplider\ReadSpider.Common\bin\Debug\ReadSpider.Common.pdb
+E:\projects\DuShu\ReadSplider\ReadSpider.Common\bin\Debug\Newtonsoft.Json.Net20.dll
+E:\projects\DuShu\ReadSplider\ReadSpider.Common\bin\Debug\Aspose.Cells.dll
+E:\projects\DuShu\ReadSplider\ReadSpider.Common\obj\Debug\ReadSpider.Common.csprojResolveAssemblyReference.cache
+E:\projects\DuShu\ReadSplider\ReadSpider.Common\obj\Debug\ReadSpider.Common.dll
+E:\projects\DuShu\ReadSplider\ReadSpider.Common\obj\Debug\ReadSpider.Common.pdb
