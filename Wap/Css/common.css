@@ -54,16 +54,21 @@ a {
 }
 
 .clear {
-    clear: both;
-}
-
-.clearfix {
-    height: 0px;
+  height: 0px;
     clear: both;
     font-size: 0px;
     display: block;
     visibility: hidden;
     content: " ";
+}
+
+.clearfix {
+    /*height: 0px;
+    clear: both;
+    font-size: 0px;
+    display: block;
+    visibility: hidden;
+    content: " ";*/
 }
 
 .ui-input-search input.ui-input-text {
@@ -348,10 +353,10 @@ a.rc6:active {
     color: #333;
     border-top: 1px solid #b9b7b7;
     border-bottom: 1px solid #fdfdfd;
-    padding: 0 4.2%;
-    margin-top: -15px;
-    margin-left: -15px;
-    margin-right: -15px;
+    padding: 0 0% 0 10px;
+    margin-top: 0px;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .fl {

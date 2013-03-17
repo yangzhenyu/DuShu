@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Wap.Books
+namespace Wap
 {
-    public partial class Search : System.Web.UI.Page
+    public partial class Store : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
