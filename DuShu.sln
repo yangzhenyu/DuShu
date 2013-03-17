@@ -4,7 +4,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Web", "Web\", "{81A9077B-02F3-4462-A07D-20A124D00F48}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+<<<<<<< HEAD
+		ProjectReferences = "{9cb50ea9-11d2-406a-a7ca-184a8d76cf33}|DuShu.BLL.dll;{be01e99b-6f6e-47c5-841a-99a109576ea5}|DuShu.DAO.dll;{63621773-26fc-4eef-93d8-12e8a80e9e1d}|DuShu.Model.dll;{712ff974-adea-4d1f-ad76-92eb429484a8}|DuShu.VO.dll;{1ce126d7-fc10-4e04-a4bb-4bcbba24cba7}|GY.Security.dll;{CB30546B-7445-4992-985B-5F2BE4B6C38F}|GY.Core.dll;"
+=======
 		ProjectReferences = "{9cb50ea9-11d2-406a-a7ca-184a8d76cf33}|DuShu.BLL.dll;{be01e99b-6f6e-47c5-841a-99a109576ea5}|DuShu.DAO.dll;{63621773-26fc-4eef-93d8-12e8a80e9e1d}|DuShu.Model.dll;{712ff974-adea-4d1f-ad76-92eb429484a8}|DuShu.VO.dll;{cb30546b-7445-4992-985b-5f2be4b6c38f}|GY.Core.dll;{1ce126d7-fc10-4e04-a4bb-4bcbba24cba7}|GY.Security.dll;"
+>>>>>>> 90e734a66fc1660132168527e4b493904a4cb151
 		Debug.AspNetCompiler.VirtualPath = "/Web"
 		Debug.AspNetCompiler.PhysicalPath = "Web\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Web\"
@@ -19,7 +23,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Web", "Web\", "{81A9077B-02
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "4784"
+		VWDPort = "48052"
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GY.Core", "GY.Core\GY.Core.csproj", "{CB30546B-7445-4992-985B-5F2BE4B6C38F}"

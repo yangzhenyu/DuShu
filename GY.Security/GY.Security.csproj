@@ -43,11 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\Interface\IResourcesService.cs" />
     <Compile Include="BLL\Interface\IUsersService.cs" />
+    <Compile Include="BLL\ResourcesService.cs" />
     <Compile Include="BLL\UsersService.cs" />
     <Compile Include="Configuration\SecurityConfig.cs" />
+    <Compile Include="DAO\Interface\IResourcesDao.cs" />
     <Compile Include="DAO\Interface\IUsersDao.cs" />
+    <Compile Include="DAO\ResourcesDao.cs" />
     <Compile Include="DAO\UsersDao.cs" />
+    <Compile Include="Model\Resources.cs" />
     <Compile Include="Model\Users.cs" />
     <Compile Include="Security.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

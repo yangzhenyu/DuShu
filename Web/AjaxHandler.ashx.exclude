@@ -1,0 +1,36 @@
+﻿<%@ WebHandler Language="C#" Class="AjaxHandler" %>
+
+using System;
+using System.Web;
+using System.IO.Compression;
+using System.Web.Script.Serialization;
+using System.IO;
+
+public class AjaxHandler : IHttpHandler
+{
+    public void ProcessRequest(HttpContext context)
+    {
+        context.Response.ContentType = "application/json";
+        string input = null;
+        JavaScriptSerializer jss = new JavaScriptSerializer();
+        using (GZipStream gzip = new GZipStream(context.Request.InputStream, CompressionMode.Decompress))
+        {
+            using (StreamReader sr = new StreamReader(gzip))
+            {
+                input = sr.ReadToEnd();
+            }
+        }
+        
+        
+        context.Response.Write("Hello World");
+    }
+
+    public bool IsReusable
+    {
+        get
+        {
+            return false;
+        }
+    }
+
+}
