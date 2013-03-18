@@ -3,6 +3,7 @@
 .container {
     margin: 0 auto;
     max-width: 1000px;
+    background-color: #F8F8F8;
 }
 
     .container > hr {
@@ -24,27 +25,29 @@
 }
 
     .navbar .nav li {
-    display: table-cell;
-    width: 1%;
-    float: none;
-}
+        display: table-cell;
+        width: 1%;
+        float: none;
+    }
 
         .navbar .nav li a {
-    font-weight: bold;
+    font-weight: normal;
+    text-shadow: 0px 1px 1px #666666;
     text-align: center;
     border-left: 1px solid rgba(255,255,255,.75);
     border-right: 1px solid rgba(0,0,0,.1);
+    color: #047C82;
 }
 
         .navbar .nav li:first-child a {
-    border-left: 0;
-    border-radius: 3px 0 0 3px;
-}
+            border-left: 0;
+            border-radius: 3px 0 0 3px;
+        }
 
         .navbar .nav li:last-child a {
-    border-right: 0;
-    border-radius: 0 3px 3px 0;
-}
+            border-right: 0;
+            border-radius: 0 3px 3px 0;
+        }
 
 .top {
     width: 100%;
@@ -634,7 +637,7 @@ a.c_gray2:link {
     padding: 0px;
     height: auto;
     line-height: 40px;
-    position: relative;
+    position: relative;   vertical-align: middle;
 }
 
     .p18 span {
@@ -658,26 +661,28 @@ a.c_gray2:link {
     }
 
     .p18 span.icon {
-        background: url('../images/p18_icon.png') no-repeat;
-        width: 24px;
-        height: 24px;
-        margin-right: 8px;
-        display: inline-block;
-    }
+    background-position: left bottom;
+    background: url('../images/p18_icon.png') no-repeat;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    display: inline-block;
+        vertical-align: middle;
+}
 
     .p18 .second {
-        background: url("../images/p18_bg.jpg") no-repeat 0px 0px rgb(92, 92, 92);
-        left: 24%;
-        width: 76%;
-        position: absolute;
-    }
+    background: url("../images/p18_bg.png") no-repeat 0px 0px;
+    left: 24%;
+    width: 76%;
+    position: absolute;
+}
 
     .p18 .third {
-        background: url("../images/p18_bg.jpg") no-repeat 0px -45px rgb(97, 97, 97);
-        left: 42.7%;
-        width: 57.3%;
-        position: absolute;
-    }
+    background: url("../images/p18_bg.png") no-repeat 0px -45px;
+    left: 42.7%;
+    width: 57.3%;
+    position: absolute;
+}
 
     .p18 .thirdw.third {
         left: 52%;
@@ -742,24 +747,86 @@ a.c_gray2:link {
 .catContent {
     margin: 10px;
     height: 160px;
-    border-top-style: solid;
     border-top-width: 1px;
-    border-right-style: solid;
     border-right-width: 1px;
-    border-top-color: #C0C0C0;
-    border-right-color: #C0C0C0;
 }
 
     .catContent li {
-        width: 33%;
-        height: 40px;
-        text-align: center;
-        line-height: 40px;
-        float: left;
-        border-bottom-style: solid;
-        border-left-style: solid;
-        border-bottom-width: 1px;
-        border-left-width: 1px;
-        border-bottom-color: #C0C0C0;
-        border-left-color: #C0C0C0;
+    border-style: solid;
+    border-color: #C0C0C0;
+    border-width: 1px;
+    margin: 1%;
+    width: 30%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    float: left;
+    background-color: #F5F5F3;
+}
+
+.navs {
+    text-align: center;
+    margin: 0 auto;
+    box-shadow: inset 0px -5px 5px #c7c6aa;
+}
+
+#content {
+}
+
+#sign-form {
+    text-align: left;
+}
+
+    #sign-form legend {
+        text-align: left;
     }
+
+.form-content {
+    padding-left: 20px;
+    margin: 0 auto;
+    width: 300px;
+}
+
+#content .content-foot {
+    padding-left: 20px;
+}
+
+.mainNav {
+    position: relative;
+    background-color: rgb(11, 132, 132);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(11, 132, 132)), to(rgb(21, 121, 119)));
+}
+.gIcon {
+    background-image: url("http://u1.sinaimg.cn/upload/cms/image/tech/header_icon_v3.png");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: 50px auto;
+    background-origin: padding-box;
+    background-clip: border-box;
+    background-color: transparent;
+    top: 0px;
+    width: 52px;
+    height: 44px;
+    right: 0px;
+    position: absolute;
+    outline-width: medium;
+    outline-style: none;
+    background-position-x: 16px;
+    background-position-y: -44px;
+
+}
+ .navGroup {
+    background: rgb(11, 132, 132);
+    width: 100%;
+    overflow: hidden;
+    clear: both;
+    border-top-color: rgb(27, 169, 166);
+    border-bottom-color: rgb(29, 160, 145);
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+}
+ .navGroup a {
+	margin: 0px; padding: 0px; border: currentColor; width: 53px; height: 39px; text-align: center; color: rgb(255, 255, 255); line-height: 39px; font-size: 16px; float: left; display: inline-block;
+}

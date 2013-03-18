@@ -25,19 +25,20 @@
                 </div>
                 <ul id="nav">
 
-                    <li id="nav1"><a class="ui-link" href="http://m.triviala.com/user/quizzes/create"><span>下载</span></a></li>
-                    <li id="nav2"><a class="ui-link" href="User/Login.aspx"><span>用户</span></a></li>
+                    <li id="nav1"><a class="text-success" href="http://m.triviala.com/user/quizzes/create"><span>下载</span></a></li>
+                    <li id="nav2"><a class="text-success" href="User/Login.aspx"><span>用户</span></a></li>
                 </ul>
             </div>
-            <div class="navbar clear">
+            <div class="clear"></div>
+            <div class="navbar">
                 <div class="navbar-inner">
                     <div class="container">
                         <ul class="nav">
-                            <li class="active"><a href="#">首页</a></li>
-                            <li><a href="#">分类</a></li>
-                            <li><a href="#">书库</a></li>
-                            <li><a href="#">排行</a></li>
-                            <li><a href="#">搜索</a></li>
+                            <li class="active"><a href="#" class="ft20">首页</a></li>
+                            <li><a class="ft20" href="#">分类</a></li>
+                            <li><a class="ft20" href="#">书库</a></li>
+                            <li><a class="ft20" href="#">排行</a></li>
+                            <li><a class="ft20" href="#">搜索</a></li>
                         </ul>
                     </div>
                 </div>
@@ -77,11 +78,11 @@
         </div>
         <div id="searchform" style="padding: 5px 0;">
 
-            <div>
+            <div style="">
                 <form class="form-search">
-                    <div class="input-append" style="width: 100%;">
-                        <input style="width: 80%" id="appendedInputButtons" placeholder="搜索书本或者作者名字" type="text">
-                        <button class="btn" style="width: 15%;" type="submit">搜索</button>
+                    <div class="ui-input-search ui-icon-searchfield" style="width: 100%; margin: 0 auto;">
+                        <input class="ui-input-text" style="width: 80%; padding: 11px 19px; font-size: 17.5px;" id="appendedInputButtons" placeholder="搜索书本或者作者名字" type="text">
+                        <%--  <button class="btn btn-large"  type="submit">搜索</button>--%>
                     </div>
                 </form>
             </div>
@@ -95,8 +96,8 @@
 
 
         </div>
-        <div class="row">
-            <div class="blockContainer span5">
+        <div class="row-fluid">
+            <div class="blockContainer span6 clearfix">
                 <nav class="p4">
                     <article class="menu ft24">
                         <article class="fl title c_gray">强力推荐</article>
@@ -129,9 +130,9 @@
                     </section>
                     <div style="clear: both;"></div>
                 </div>
-                  <div class="clearfix"></div>
+                <div class="clearfix"></div>
             </div>
-            <div class="blockContainer span5">
+            <div class="blockContainer span6 clearfix">
                 <nav class="p4">
                     <article class="menu ft24">
                         <article class="fl title c_gray">畅销榜 </article>
@@ -203,9 +204,10 @@
                         </article>
                     </section>
                 </div>
-                <div class="clearfix"></div>
+
             </div>
-            <div class="blockContainer span5">
+            <div class="clear"></div>
+            <div class="blockContainer span6 clearfix">
                 <nav class="p4 mt_25">
                     <article class="menu ft24">
                         <article class="fl title c_gray">热门标签 </article>

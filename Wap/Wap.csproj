@@ -87,13 +87,6 @@
     <Compile Include="Books\Comment.aspx.designer.cs">
       <DependentUpon>Comment.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Books\Search.aspx.cs">
-      <DependentUpon>Search.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Books\Search.aspx.designer.cs">
-      <DependentUpon>Search.aspx</DependentUpon>
-    </Compile>
     <Compile Include="classify.aspx.cs">
       <DependentUpon>classify.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -136,6 +129,20 @@
     </Compile>
     <Compile Include="ranking.aspx.designer.cs">
       <DependentUpon>ranking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Store.aspx.cs">
+      <DependentUpon>Store.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Store.aspx.designer.cs">
+      <DependentUpon>Store.aspx</DependentUpon>
     </Compile>
     <Compile Include="User\Avatar.aspx.cs">
       <DependentUpon>Avatar.aspx</DependentUpon>
@@ -206,8 +213,8 @@
     <Content Include="Books\Category.aspx" />
     <Content Include="Books\Chapter.aspx" />
     <Content Include="Books\Comment.aspx" />
-    <Content Include="Books\Search.aspx" />
     <Content Include="classify.aspx" />
+    <Content Include="Css\book.css" />
     <Content Include="Css\bootstrap-responsive.css" />
     <Content Include="Css\bootstrap-responsive.min.css" />
     <Content Include="Css\bootstrap.css" />
@@ -226,10 +233,12 @@
     <Content Include="images\application.png" />
     <Content Include="images\arrow.png" />
     <Content Include="images\bg.gif" />
+    <Content Include="images\chapter.png" />
     <Content Include="images\glyphicons-halflings-white.png" />
     <Content Include="images\glyphicons-halflings.png" />
     <Content Include="images\logo.png" />
     <Content Include="images\p18_bg.jpg" />
+    <Content Include="images\p18_bg.png" />
     <Content Include="images\p18_icon.png" />
     <Content Include="images\p2_3_4_bg.jpg" />
     <Content Include="images\p9_bg.png" />
@@ -241,13 +250,22 @@
     <Content Include="script\lib\bootstrap.min.js" />
     <Content Include="script\lib\json.js" />
     <Content Include="script\main.js" />
+    <Content Include="script\lib\querystring.js" />
+    <Content Include="script\pagejs\books.book.js" />
+    <Content Include="script\pagejs\books.category.js" />
+    <Content Include="script\pagejs\books.chapter.js" />
+    <Content Include="script\pagejs\search.js" />
+    <Content Include="script\pagejs\store.js" />
     <Content Include="script\resources.js" />
-    <Content Include="script\web\index.js" />
+    <Content Include="script\pagejs\index.js" />
     <Content Include="script\lib\jquery.js" />
     <Content Include="script\lib\jquery.mobile-1.3.0.js" />
     <Content Include="script\lib\jquery.mobile-1.3.0.min.js" />
+    <Content Include="script\routes.js" />
     <Content Include="script\seajs\sea.js" />
     <Content Include="ranking.aspx" />
+    <Content Include="Search.aspx" />
+    <Content Include="Store.aspx" />
     <Content Include="User\Avatar.aspx" />
     <Content Include="User\Comment.aspx" />
     <Content Include="User\findpwd.aspx" />
@@ -263,6 +281,8 @@
     <Content Include="Master\Main.Master" />
     <Content Include="Index.Master" />
     <Content Include="script\common.cache.js" />
+    <Content Include="script\pagejs\user.findpwd.js" />
+    <None Include="Properties\PublishProfiles\wap.pubxml" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
@@ -270,7 +290,9 @@
       <DependentUpon>web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -4,7 +4,6 @@ namespace GY.Security.Model
 {
      public class Users
      { 
-
          public Guid UserID { get; set; } 
          public String NickName { get; set;}  
          public String UserName { get; set; }  
@@ -20,6 +19,5 @@ namespace GY.Security.Model
          public Guid ModifiedBy { get; set; }
          public String ModifiedByName { get; set; }
          public DateTime ModifiedTime { get; set; }
-
      }
 }

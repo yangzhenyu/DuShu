@@ -1,0 +1,17 @@
+drop table GY_Resources
+create table GY_Resources
+(
+ResourceId uniqueidentifier primary key,
+ParentId uniqueidentifier null,
+ResourceName nvarchar(100) null,
+SortIndex int null,
+Describe nvarchar(2000) null,
+UrlLink nvarchar(200) not null,
+Status int null,
+CreatedBy nvarchar(40) not null,
+CreatedByName nvarchar(100) not null,
+CreatedTime DateTime not null,
+ModifiedBy nvarchar(40) not null,
+ModifiedByName nvarchar(100) not null,
+ModifiedTime Datetime not null
+) 

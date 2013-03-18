@@ -35,7 +35,7 @@ namespace ReadSpider
             site.ChapterReg = textBox12.Text;
             site.ContentUrl = textBox13.Text;
             site.IsNotSplideParms = checkBox1.Checked;
-            site.SpliderDeep = int.Parse(comboBox1.SelectedText);
+            site.SpliderDeep = int.Parse(comboBox1.Text);
 
             this.DialogResult = DialogResult.OK;
         }

@@ -12,116 +12,1049 @@
     <script src="http://static2.zhufukc.com/js/mobile/jquery.mobile-1.1.0-mini.js"></script>
     <link rel="apple-touch-icon" href="http://static2.zhufukc.com/img/base/mobileicon.png?1" />
     <link rel="apple-touch-startup-image" href="http://static2.zhufukc.com/img/base/mobilestartup.jpg?1">
+    <style type="text/css">
+
+
+.top {
+    width: 100%;
+    height: 40px;
+    padding-top: 3px;
+}
+
+    .top .logo {
+        width: 150px;
+        padding-left: 10px;
+        float: left;
+    }
+
+            #nav li a span {
+                padding-top: 28px;
+                display: block;
+            }
+
+        .clear{ clear: both;}
+ .ui-input-search { border: 1px solid 		#aaa /*{c-body-border}*/; 
+ 	background-image: -webkit-gradient(linear, left top, left bottom, from( #f9f9f9 /*{c-body-background-start}*/), to( #eee /*{c-body-background-end}*/)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient( #f9f9f9 /*{c-body-background-start}*/, #eee /*{c-body-background-end}*/); /* Chrome 10+, Saf5.1+ */
+	background-image:    -moz-linear-gradient( #f9f9f9 /*{c-body-background-start}*/, #eee /*{c-body-background-end}*/); /* FF3.6 */
+	background-image:     -ms-linear-gradient( #f9f9f9 /*{c-body-background-start}*/, #eee /*{c-body-background-end}*/); /* IE10 */
+	background-image:      -o-linear-gradient( #f9f9f9 /*{c-body-background-start}*/, #eee /*{c-body-background-end}*/); /* Opera 11.10+ */
+	background-image:         linear-gradient( #f9f9f9 /*{c-body-background-start}*/, #eee /*{c-body-background-end}*/);
+    -webkit-background-clip: padding;
+	background-clip: padding-box;
+    -webkit-border-radius: 1em; /*{global-radii-buttons}*/;
+    border-radius: 1em;
+    margin: 0.5em 0 0.5em 0;
+    position: relative;
+    background-image: none;
+    padding: 0 30px;
+
+      }
+
+.ui-input-search { padding: 0 30px; }
+.ui-shadow-inset {
+	-moz-box-shadow: inset 0px 1px 4px 		rgba(0,0,0,.2);
+	-webkit-box-shadow: inset 0px 1px 4px 	rgba(0,0,0,.2);
+	box-shadow: inset 0px 1px 4px 			rgba(0,0,0,.2);
+}
+.ui-corner-all,
+.ui-btn-corner-all {
+	-webkit-background-clip: padding;
+	background-clip: padding-box;
+}
+.ui-btn-corner-all {
+	-webkit-border-radius: 				1em /*{global-radii-buttons}*/;
+	border-radius: 						1em /*{global-radii-buttons}*/;
+}
+.ui-body-c,
+.ui-overlay-c {
+	border: 1px solid 		#aaa /*{c-body-border}*/; 
+ 	background-image: -webkit-gradient(linear, left top, left bottom, from( #f9f9f9 /*{c-body-background-start}*/), to( #eee /*{c-body-background-end}*/)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient( #f9f9f9 /*{c-body-background-start}*/, #eee /*{c-body-background-end}*/); /* Chrome 10+, Saf5.1+ */
+	background-image:    -moz-linear-gradient( #f9f9f9 /*{c-body-background-start}*/, #eee /*{c-body-background-end}*/); /* FF3.6 */
+	background-image:     -ms-linear-gradient( #f9f9f9 /*{c-body-background-start}*/, #eee /*{c-body-background-end}*/); /* IE10 */
+	background-image:      -o-linear-gradient( #f9f9f9 /*{c-body-background-start}*/, #eee /*{c-body-background-end}*/); /* Opera 11.10+ */
+	background-image:         linear-gradient( #f9f9f9 /*{c-body-background-start}*/, #eee /*{c-body-background-end}*/);
+}
+
+.ft22 { font-size: 22px; }
+.ml_25 { margin-left: 25px; }
+.rc1 { color: rgb(99, 147, 0); }
+
+.rc2 { color: rgb(102, 102, 102); }
+
+.rc3 { color: rgb(203, 60, 194); }
+
+.rc4 { color: rgb(215, 81, 83); }
+
+.rc5 { color: rgb(83, 129, 191); }
+
+.tu_slide {
+    text-align: center;
+}
+
+    .tu_slide .content {
+        margin: 0px auto;
+        width: 310px;
+        height: 210px;
+        overflow: hidden;
+        position: relative;
+    }
+
+        .tu_slide .action {
+        left: 0px;
+        height: 28px;
+        bottom: 0px;
+        clear: both;
+        position: absolute;
+    }
+
+        .tu_slide .action .prev {
+            background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAALCAYAAABCm8wlAAAAUUlEQVQY03XQwQ4AMQQE0Pn/q+JzLZsQ2+Uw0cQzh4KZEVFViMj79mkZDMB6blCXRBQAHdg5p+IAHXxqHaCDWkR1NmbGhgmsCFflD91g/4cNPXX/w5RamaYxAAAAAElFTkSuQmCC") no-repeat center rgb(255, 255, 255);
+            margin-left: 15px;
+        }
+
+        .tu_slide .action .pg-btn {
+            border: 1px solid rgb(196, 196, 196);
+            width: 58px;
+            height: 26px;
+            line-height: 26px;
+            text-indent: -9999px;
+        }
+
+        .tu_slide .action .pg-btn {
+            float: left;
+        }
+
+        .tu_slide .action .trigs {
+            width: 160px;
+            text-align: center;
+            float: left;
+        }
+
+            .tu_slide .action .trigs {
+            float: left;
+        }
+
+        .tu_slide .action .next {
+            background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAALBAMAAACwtdEWAAAAElBMVEX///+Xl5eWlpaVlZWUlJSTk5NkYeJtAAAAAXRSTlMAQObYZgAAACZJREFUCNdjUFJgYGAwNgYSrGCmiyOQYDY2AJLKxlCWMTKDAcQAAG9nBCyPC8DqAAAAAElFTkSuQmCC") no-repeat center rgb(255, 255, 255);
+            margin-right: 15px;
+        }
+
+        .blockContainer {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.p4 {
+    border-top-color: rgb(232, 223, 196);
+    border-bottom-color: rgb(232, 223, 196);
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+}
+
+    .p4 {
+    height: 52px;
+}
+
+    .p4 > .menu {
+        background: url('images/p2_3_4_bg.jpg') repeat-x 0px -102px;
+        }
+
+    .p4 .menu {
+        padding: 0px 20px;
+        height: 51px;
+        line-height: 51px;
+        margin-top: 1px;
+    }
+
+    .p4 .menu { padding: 0px 20px; height: 51px; line-height: 51px; margin-top: 1px; }
+.ft24 { font-size: 24px; }
+.menu .title { text-shadow: 0px 2px 1px white;  }
+
+.c_gray {
+    color: rgb(163, 138, 75);
+}
+
+.fl { float: left; }
+
+.mark {
+    height: 51px;
+    position: relative;
+}
+
+    .fr { float: right; }
+
+.p4 .mark .line {
+    background: rgb(186, 151, 71);
+    left: 0px;
+}
+
+    .p4 .mark .line {
+        background: rgb(186, 151, 71);
+        left: 0px;
+    }
+
+    .mark .mark_line {
+        width: 50px;
+        height: 3px;
+        bottom: 0px;
+        display: inline-block;
+        position: absolute;
+        -webkit-transition: all 0.5s ease-in;
+    }
+
+.touchblock {
+    left: -100%;
+    position: relative;
+}
+
+    .touchblock section {
+        margin: 0px;
+        float: left;
+    }
+
+.p8 {
+    margin: 0px 20px;
+}
+
+    .p8 .li_b {
+        border-bottom-color: currentColor;
+        border-bottom-width: medium;
+        border-bottom-style: none;
+    }
+
+    .p8 .type {
+    margin-right: 10px;
+}
+
+    .p8 .title {
+        width: 78%;
+        display: inline-block;
+        font-weight: normal;
+        color: black;
+        height: 48px;
+    }
+
+    .mt_25 { margin-top: 25px; }
+
+.p7_20 {
+    height: 340px;
+}
+
+    .p7 {
+    width: 100%;
+    height: 133px;
+    clear: both;
+    font-size: 24px;
+    position: relative;
+}
+
+    .p4 .mark .line2 {
+    background: rgb(186, 151, 71);
+    left: 0px;
+}
+
+    .p4 .mark .line2 {
+        background: rgb(186, 151, 71);
+        left: 0px;
+    }
+
+    .p8 .li_t {
+        border-top-color: currentColor;
+        border-top-width: medium;
+        border-top-style: none;
+    }
+
+    .p8 .num {
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        color: white;
+        line-height: 20px;
+        margin-top: 7px;
+        margin-right: 13px;
+        vertical-align: middle;
+        display: inline-block;
+    }
+
+    .p8 .num_c1 {
+        background: rgb(213, 43, 44);
+    }
+
+    .ft18 { font-size: 18px; }
+
+    .p8 .title_b {
+        color: rgb(119, 119, 119);
+        margin-left: 18px;
+    }
+
+    .p8 .num_c2 {
+        background: rgb(255, 121, 51);
+    }
+
+    .p8 .num_c3 {
+        background: rgb(255, 176, 30);
+    }
+
+    .p8 .num_c {
+        background: rgb(137, 125, 107);
+    }
+
+    .p8 .more {
+        margin: 5px 0px;
+    }
+
+    .p8 .more_btn {
+        border-radius: 5px;
+        border: 1px solid rgb(190, 190, 190);
+        width: 100%;
+        height: 44px;
+        text-align: center;
+        line-height: 44px;
+        cursor: pointer;
+    }
+
+button { border: currentColor; font-family: "微软雅黑"; }
+
+.catContent {
+    margin: 10px;
+    height: 160px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-color: #C0C0C0;
+    border-right-color: #C0C0C0;
+}
+
+    .clearfix {
+    height: 0px;
+    clear: both;
+    font-size: 0px;display: block;
+    visibility: hidden;
+    content: " "; 
+}
+
+.b_return {
+	margin: 25px auto; width: 120px;
+}
+.ret_btn {
+	cursor: pointer;
+}
+.b_return_i {
+	color: rgb(194, 194, 194); margin-right: 5px; margin-bottom: 13px; vertical-align: middle; display: inline-block;
+}
+.mt_20 { margin-top: 20px; }
+
+.p9 {
+    background: url('images/p9_bg.png') repeat-x;
+    width: 100%;
+    height: 180px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-top: -1px;
+}
+
+        .p9 > nav.wap {
+            margin: 0px auto;
+            height: auto;
+            color: rgb(255, 235, 121);
+            font-size: 20px;
+            display: block;
+        }
+
+            .p9 > nav {
+        width: 322px;
+        height: 40px;
+        padding-top: 10px;
+        display: inline-block;
+    }
+
+        .p9 ul li > span.line {
+    width: 2px;
+    height: 27px;
+    right: 0px;
+    display: inline-block;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+}
+
+        .auto-style1 {
+            color: rgb(165, 166, 167);
+            text-decoration: none;
+            height: 46px;
+            font-size: 11px;
+            font-weight: bold;
+            display: block;
+            margin: 0px;
+            padding: 0px;
+        }
+        .auto-style2 {
+            color: inherit;
+            text-decoration: none;
+        }
+        .auto-style3 {
+            font-family: Helvetica, Arial, sans-serif;
+            position: relative;
+            margin: .5em 0;
+            background-image: none;
+        }
+        .auto-style4 {
+            font-family: Helvetica, Arial, sans-serif;
+            line-height: 1.4em;
+            font-size: 16px;
+            display: block;
+            width: 100%;
+            margin: .5em 0;
+            padding: .4em;
+            background-image: none;
+        }
+        .auto-style5 {
+            color: rgb(99, 147, 0);
+            text-decoration: none;
+        }
+        .auto-style6 {
+            color: rgb(102, 102, 102);
+            text-decoration: none;
+        }
+        .auto-style7 {
+            color: rgb(203, 60, 194);
+            text-decoration: none;
+        }
+        .auto-style8 {
+            color: rgb(215, 81, 83);
+            text-decoration: none;
+        }
+        .auto-style9 {
+            color: rgb(83, 129, 191);
+            text-decoration: none;
+        }
+        .auto-style10 {
+            list-style-type: none;
+            left: 0px;
+            top: 0px;
+            width: 1550px;
+            position: absolute;
+            margin: 0px;
+            padding: 0px;
+        }
+        .auto-style11 {
+            width: 10px;
+            height: 10px;
+            text-indent: -9999px;
+            display: inline-block;
+            margin-right: 10px;
+            background: rgb(48, 121, 237) 0px 0px;
+        }
+        .auto-style12 {
+            color: inherit;
+            text-decoration: none;
+            margin: 0px;
+            padding: 0px 3px;
+        }
+        .auto-style13 {
+            list-style-type: none;
+            border-bottom: 1px solid rgb(255, 255, 255);
+            margin: 0;
+            padding: 0px;
+        }
+        .auto-style14 {
+            height: 48px;
+            line-height: 34px;
+            overflow: hidden;
+            border-top-style: none;
+            border-top-color: currentColor;
+            border-top-width: medium;
+            border-bottom: 1px solid rgb(204, 204, 204);
+            margin: 0px 20px;
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-top: 10px;
+            padding-bottom: 4px;
+            background: url('images/arrow.png') no-repeat right 50%;
+        }
+        .auto-style15 {
+            color: #b89442;
+            text-decoration: none;
+        }
+        .auto-style16 {
+            height: 48px;
+            line-height: 34px;
+            overflow: hidden;
+            border-top: 1px solid rgb(255, 255, 255);
+            border-bottom-style: none;
+            border-bottom-color: currentColor;
+            border-bottom-width: medium;
+            margin: 0px 20px;
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-top: 10px;
+            padding-bottom: 4px;
+            background: url('images/arrow.png') no-repeat right 50%;
+        }
+        .auto-style17 {
+            color: rgb(51, 51, 51);
+            text-decoration: none;
+            width: 96px;
+            height: 40px;
+            text-align: center;
+            font-weight: normal;
+            line-height: 40px;
+            display: inline-block;
+            position: absolute;
+            left: 5.4%;
+            top: 158px;
+            background-color: rgb(250, 104, 104);
+        }
+        .auto-style18 {
+            color: rgb(51, 51, 51);
+            text-decoration: none;
+            width: 96px;
+            height: 40px;
+            text-align: center;
+            font-weight: normal;
+            line-height: 40px;
+            display: inline-block;
+            position: absolute;
+            left: 8.3%;
+            top: 89px;
+            background-color: rgb(221, 203, 250);
+        }
+        .auto-style19 {
+            color: rgb(51, 51, 51);
+            text-decoration: none;
+            width: 96px;
+            height: 40px;
+            text-align: center;
+            font-weight: normal;
+            line-height: 40px;
+            display: inline-block;
+            position: absolute;
+            left: 10.2%;
+            top: 24px;
+            background-color: rgb(250, 208, 133);
+        }
+        .auto-style20 {
+            color: rgb(51, 51, 51);
+            text-decoration: none;
+            width: 96px;
+            height: 40px;
+            text-align: center;
+            font-weight: normal;
+            line-height: 40px;
+            display: inline-block;
+            position: absolute;
+            left: 20.4%;
+            top: 193px;
+            background-color: rgb(238, 231, 200);
+        }
+        .auto-style21 {
+            color: rgb(51, 51, 51);
+            text-decoration: none;
+            width: 96px;
+            height: 40px;
+            text-align: center;
+            font-weight: normal;
+            line-height: 40px;
+            display: inline-block;
+            position: absolute;
+            left: 23.3%;
+            top: 131px;
+            background-color: rgb(250, 175, 205);
+        }
+        .auto-style22 {
+            color: rgb(51, 51, 51);
+            text-decoration: none;
+            width: 96px;
+            height: 40px;
+            text-align: center;
+            font-weight: normal;
+            line-height: 40px;
+            display: inline-block;
+            position: absolute;
+            left: 27.7%;
+            top: 65px;
+            background-color: rgb(184, 233, 68);
+        }
+        .auto-style23 {
+            color: rgb(51, 51, 51);
+            text-decoration: none;
+            width: 96px;
+            height: 40px;
+            text-align: center;
+            font-weight: normal;
+            line-height: 40px;
+            display: inline-block;
+            position: absolute;
+            left: 30%;
+            top: 11px;
+            background-color: rgb(240, 161, 230);
+        }
+        .auto-style24 {
+            color: rgb(51, 51, 51);
+            text-decoration: none;
+            width: 96px;
+            height: 40px;
+            text-align: center;
+            font-weight: normal;
+            line-height: 40px;
+            display: inline-block;
+            position: absolute;
+            left: 37.5%;
+            top: 218px;
+            background-color: rgb(166, 221, 190);
+        }
+        .auto-style25 {
+            color: rgb(51, 51, 51);
+            text-decoration: none;
+            width: 96px;
+            height: 40px;
+            text-align: center;
+            font-weight: normal;
+            line-height: 40px;
+            display: inline-block;
+            position: absolute;
+            left: 39.8%;
+            top: 146px;
+            background-color: rgb(170, 218, 243);
+        }
+        .auto-style26 {
+            color: rgb(51, 51, 51);
+            text-decoration: none;
+            width: 96px;
+            height: 40px;
+            text-align: center;
+            font-weight: normal;
+            line-height: 40px;
+            display: inline-block;
+            position: absolute;
+            left: 42.1%;
+            top: 104px;
+            background-color: rgb(121, 185, 251);
+        }
+        .auto-style27 {
+            color: rgb(51, 51, 51);
+            text-decoration: none;
+            width: 96px;
+            height: 40px;
+            text-align: center;
+            font-weight: normal;
+            line-height: 40px;
+            display: inline-block;
+            position: absolute;
+            left: 55.4%;
+            top: 196px;
+            background-color: rgb(202, 240, 229);
+        }
+        .auto-style28 {
+            color: rgb(51, 51, 51);
+            text-decoration: none;
+            width: 96px;
+            height: 40px;
+            text-align: center;
+            font-weight: normal;
+            line-height: 40px;
+            display: inline-block;
+            position: absolute;
+            left: 54.6%;
+            top: 36px;
+            background-color: rgb(159, 231, 227);
+        }
+        .auto-style29 {
+            color: rgb(51, 51, 51);
+            text-decoration: none;
+            width: 96px;
+            height: 40px;
+            text-align: center;
+            font-weight: normal;
+            line-height: 40px;
+            display: inline-block;
+            position: absolute;
+            left: 58.3%;
+            top: 124px;
+            background-color: rgb(198, 211, 235);
+        }
+        .auto-style30 {
+            color: rgb(51, 51, 51);
+            text-decoration: none;
+            width: 96px;
+            height: 40px;
+            text-align: center;
+            font-weight: normal;
+            line-height: 40px;
+            display: inline-block;
+            position: absolute;
+            left: 70.8%;
+            top: 71px;
+            background-color: rgb(253, 254, 156);
+        }
+        .auto-style31 {
+            color: rgb(51, 51, 51);
+            text-decoration: none;
+            width: 96px;
+            height: 40px;
+            text-align: center;
+            font-weight: normal;
+            line-height: 40px;
+            display: inline-block;
+            position: absolute;
+            left: 73.1%;
+            top: 20px;
+            background-color: rgb(250, 180, 171);
+        }
+        .auto-style32 {
+            height: 48px;
+            line-height: 34px;
+            overflow: hidden;
+            border-top: 1px solid rgb(255, 255, 255);
+            border-bottom: 1px solid rgb(204, 204, 204);
+            margin: 0px 20px;
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-top: 10px;
+            padding-bottom: 4px;
+            background: url('images/arrow.png') no-repeat right 50%;
+        }
+        .auto-style33 {
+            list-style-type: none;
+            margin: 0;
+            padding: 0px;
+        }
+    </style>
 </head>
 <body>
-    <div data-role="page" id="index">
+    <header>
         <div class="top">
             <div class="logo">
-                <a href="/?r=mobile/index">
-                    <img width="150" src="http://static2.zhufukc.com/img/base/logo-small.png?1" /></a>
+                <a href="./?r=mobile/index">
+                <img src="images/logo.png" width="150" /></a>
             </div>
-            <div class="uinfo">
-                <a href="/?r=mobile/login" class="action">登录</a> <a href="/?r=mobile/reg" class="action">注册</a>
-            </div>
+            <ul id="nav">
+                <li id="nav1"><a class="auto-style1" href="http://m.triviala.com/user/quizzes/create" style="text-shadow: none;"><span>下载</span></a></li>
+                <li id="nav2"><a class="auto-style1" href="User/Login.aspx" style="text-shadow: none;"><span>用户</span></a></li>
+            </ul>
         </div>
-        <div style="clear: both"></div>
-        <div data-role="header">
+        <div class="clear" data-role="header">
             <div data-role="navbar">
                 <ul>
-                    <li><a href="/?r=mobile/recipes" class="zhu-ui-bar-a">主妇菜谱</a></li>
-                    <li><a href="/?r=mobile/cookbooks" class="zhu-ui-bar-a">精选菜单</a></li>
-                    <li><a href="/?r=mobile/newslist" class="zhu-ui-bar-a">厨房百科</a></li>
+                    <li><a class="auto-style2" href="./?r=mobile/recipes">首页</a></li>
+                    <li><a class="auto-style2" href="./?r=mobile/cookbooks">分类</a></li>
+                    <li><a class="auto-style2" href="./?r=mobile/newslist">书库</a></li>
+                    <li><a class="auto-style2" href="./?r=mobile/newslist">排行</a></li>
+                    <li><a class="auto-style2" href="./?r=mobile/newslist">搜索</a></li>
                 </ul>
             </div>
         </div>
-        <div id="searchform" style="padding: 5px 0; display: block;">
-            <form action="/?r=mobile/search" method="get">
-                <input type="hidden" name="type" value="1" />
-                <div class="ui-input-search ui-shadow-inset ui-btn-corner-all ui-btn-shadow ui-icon-searchfield ui-body-c">
-                    <input type="search" data-role="none" name="key" id="search" placeholder="搜索菜谱或厨房百科" class="ui-input-text ui-body-c" />
+    </header>
+    <div id="searchform">
+        <form action="./?r=mobile/search" method="get">
+            <input name="type" type="hidden" value="1" />
+            <div class="auto-style3">
+                <input id="search" class="auto-style4" data-role="none" name="key" placeholder="搜索书本或者作者名字" style="min-height: 1.4em; outline-width: 0; outline-style: none; outline-color: invert; -webkit-appearance: none;" type="search" /></div>
+        </form>
+        <article class="ft22">
+            <a class="auto-style5" href="Index.aspx#">重生</a> <a class="auto-style6" href="Index.aspx#">美女</a> <a class="auto-style7" href="Index.aspx#">重生</a> <a class="auto-style8" href="Index.aspx#">美女</a> <a class="auto-style9" href="Index.aspx#">重生</a>
+        </article>
+    </div>
+    <div class="tu_slide">
+        <div class="content">
+            <ul class="auto-style10">
+                <li><a href="./?r=mobile/RecipeDetails&amp;recipeid=17598">
+                    <img class="slideimg" height="176" src="http://img.zhufukc.com/images/other/20130105/21ed0a71817e23a980180e92f69acc12.jpg" width="310" /></a></li>
+                <li><a href="./?r=mobile/RecipeDetails&amp;recipeid=16865">
+                    <img class="slideimg" height="176" src="http://img.zhufukc.com/images/other/20121015/2cf616051f0778d9761b6802e9a2a6e1.jpg" width="310" /></a></li>
+                <li><a href="./?r=mobile/RecipeDetails&amp;recipeid=9521">
+                    <img _src="http://img.zhufukc.com/images/other/20120917/fe26d895721d161cc8c0759ce90c6e3c.jpg" class="slideimg" height="176" src="http://img.zhufukc.com/images/blank.gif" width="310" /></a></li>
+                <li><a href="./?r=mobile/RecipeDetails&amp;recipeid=13836">
+                    <img _src="http://img.zhufukc.com/images/other/20120819/a3843da5892605d0eaef72ee938e960b.jpg" class="slideimg" height="176" src="http://img.zhufukc.com/images/blank.gif" width="310" /></a></li>
+            </ul>
+            <div class="action">
+                <div class="prev pg-btn">
+                    <a>上一页</a></div>
+                <div class="trigs">
+                    <ul>
+                        <li class="auto-style11" style="-webkit-border-radius: 5px;">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                    </ul>
                 </div>
-            </form>
-        </div>
-        <div class="zhu-slide">
-            <div class="content">
-                <ul class="img">
-                    <li><a href="/?r=mobile/RecipeDetails&recipeid=17598">
-                        <img src="http://img.zhufukc.com/images/other/20130105/21ed0a71817e23a980180e92f69acc12.jpg" class="slideimg" width="310" height="176" /></a></li>
-                    <li><a href="/?r=mobile/RecipeDetails&recipeid=16865">
-                        <img src="http://img.zhufukc.com/images/other/20121015/2cf616051f0778d9761b6802e9a2a6e1.jpg" class="slideimg" width="310" height="176" /></a></li>
-                    <li><a href="/?r=mobile/RecipeDetails&recipeid=9521">
-                        <img src="http://img.zhufukc.com/images/blank.gif" _src="http://img.zhufukc.com/images/other/20120917/fe26d895721d161cc8c0759ce90c6e3c.jpg" class="slideimg" width="310" height="176" /></a></li>
-                    <li><a href="/?r=mobile/RecipeDetails&recipeid=13836">
-                        <img src="http://img.zhufukc.com/images/blank.gif" _src="http://img.zhufukc.com/images/other/20120819/a3843da5892605d0eaef72ee938e960b.jpg" class="slideimg" width="310" height="176" /></a></li>
-                </ul>
-                <div class="action">
-                    <div class="prev pg-btn"><a>上一页</a></div>
-                    <div class="trigs">
-                        <ul>
-                            <li class="cur">1</li>
-                            <li class="">2</li>
-                            <li class="">3</li>
-                            <li class="">4</li>
-                        </ul>
-                    </div>
-                    <div class="next pg-btn"><a>下一页</a></div>
-                </div>
+                <div class="next pg-btn">
+                    <a>下一页</a></div>
             </div>
-        </div>
-        <div data-role="content" style="margin-top: 10px; padding-top: 15px;">
-            <ul data-role="listview">
-                <li data-role="list-divider">最新菜谱</li>
-                <li><a href="/?r=mobile/RecipeDetails&recipeid=16371">
-                    <img src="http://img.zhufukc.com/images/blank.gif" _src="http://img.zhufukc.com/images/kc/2012-09-03/7ad8c4c342841caf46efe960bc00d9a7.jpg" class="lazy" />
-                    <h3>“晶心”土豆泥</h3>
-                    <p>土豆 黄瓜 胡萝卜 黑胡椒 </p>
-                </a></li>
-                <li><a href="/?r=mobile/RecipeDetails&recipeid=16386">
-                    <img src="http://img.zhufukc.com/images/blank.gif" _src="http://img.zhufukc.com/images/kc/2012-09-04/99087a2f50549f7783d61373e4d644f5.jpg" class="lazy" />
-                    <h3>干煸椒盐排骨</h3>
-                    <p>仔排 葱 姜 干辣椒 </p>
-                </a></li>
-                <li><a href="/?r=mobile/RecipeDetails&recipeid=16412">
-                    <img src="http://img.zhufukc.com/images/blank.gif" _src="http://img.zhufukc.com/images/kc/2012-09-05/28f88234cef85d47bb091c8d68b28592.jpg" class="lazy" />
-                    <h3>薄荷炒蛋</h3>
-                    <p>新鲜薄荷叶 鸡蛋 </p>
-                </a></li>
-                <li><a href="/?r=mobile/RecipeDetails&recipeid=16421">
-                    <img src="http://img.zhufukc.com/images/blank.gif" _src="http://img.zhufukc.com/images/kc/2012-09-06/d31c20d48234340dee0a5737609d2b7b.jpg" class="lazy" />
-                    <h3>香肠热狗</h3>
-                    <p>小餐包 香肠 生菜叶 沙拉酱 </p>
-                </a></li>
-            </ul>
-            <ul data-role="listview" style="margin-top: 20px;">
-                <li data-role="list-divider">推荐百科</li>
-                <li><a href="/?r=mobile/NewsDetails&newsid=2944">
-                    <h3>益母草煮鸡蛋 痛经者食疗佳品</h3>
-                    <p>益母草含有多种微量元素。性味辛苦凉，具有活血、法瘀</p>
-                </a></li>
-                <li><a href="/?r=mobile/NewsDetails&newsid=2953">
-                    <h3>饮食调养防经期腰痛 3药膳补肾强腰</h3>
-                    <p>女人易腰疼，尤其是在经期，有时不是因为劳累，可能是</p>
-                </a></li>
-                <li><a href="/?r=mobile/NewsDetails&newsid=3735">
-                    <h3>不同的菜肴有不同的刀法</h3>
-                    <p>1、直切：操作要领是，用刀地砌下去，一刀切断，切时既</p>
-                </a></li>
-                <li><a href="/?r=mobile/NewsDetails&newsid=3744">
-                    <h3>不想煮出“黑”茄子有妙招</h3>
-                    <p>许多人认为，茄子炒后必然变黑，其实不然。只要烹调方</p>
-                </a></li>
-            </ul>
-            <div>&nbsp;</div>
-        </div>
-        <div data-role="footer" class="footer-docs" data-theme="c">
-            <p>
-                CoryRight &copy; 2012 &nbsp; <a href="http://wap.zhufukc.com/" data-role="none" rel="external">3G版</a> | 触屏版  | <a href="http://www.zhufukc.com/?from=mobile" data-role="none" rel="external">网站版</a>
-            </p>
         </div>
     </div>
-    <script type="text/javascript">
-        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-        document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc711e314dbccd15fc0ea7dc1428b189e' type='text/javascript'%3E%3C/script%3E"));
-    </script>
+    <div class="blockContainer">
+        <nav class="p4">
+            <article class="menu ft24">
+                <article class="fl title c_gray">
+                    强力推荐</article>
+                <article class="fr mark">
+                    <a class="auto-style12" href="javascript:;">本期</a> <a class="auto-style12" href="javascript:;">往期</a>
+                    <article class="mark_line line">
+                    </article>
+                </article>
+            </article>
+        </nav>
+        <div class="touchblock ani">
+            <section class="p8 ft24 c3">
+                <ul class="auto-style13">
+                    <li class="auto-style14"><a class="auto-style15" href="t/book/category/111/">[科幻]</a><a class="auto-style2" href="t/book/366308/">异能少年王:末日审判者</a> </li>
+                    <li><a class="auto-style15" href="t/book/category/106/">[穿越]</a><a class="auto-style2" href="t/book/366303/">捡个皇帝老公:淑女攻略</a> </li>
+                    <li><a class="auto-style15" href="t/book/category/99/">[玄幻]</a><a class="auto-style2" href="t/book/366591/">杀神祖先附体:至尊狂圣</a> </li>
+                    <li><a class="auto-style15" href="t/book/category/131/">[总裁]</a><a class="auto-style2" href="t/book/366298/">误惹大少爷:娇妻太凶猛</a> </li>
+                    <li><a class="auto-style15" href="t/book/category/99/">[玄幻]</a><a class="auto-style2" href="t/book/367210/">炼丹宗师重生:异界魔君</a> </li>
+                    <li class="auto-style16"><a class="auto-style15" href="t/book/category/81/">[情感]</a><a class="auto-style2" href="t/book/353505/">都市绝恋:再见，我的爱人</a> </li>
+                </ul>
+            </section>
+            <section class="p8 ft24 c3">
+                <ul class="auto-style13">
+                    <li class="auto-style14"><a class="auto-style15" href="t/book/category/103/">[都市]</a><a class="auto-style2" href="t/book/366299/">超级异能:我的美女校花</a> </li>
+                    <li><a class="auto-style15" href="t/book/category/99/">[玄幻]</a><a class="auto-style2" href="t/book/366292/">罗森神作降临:白银之歌</a> </li>
+                    <li><a class="auto-style15" href="t/book/category/99/">[玄幻]</a><a class="auto-style2" href="t/book/366302/">热血狂战异界:纯阳武圣</a> </li>
+                    <li><a class="auto-style15" href="t/book/category/133/">[幻想]</a><a class="auto-style2" href="t/book/366304/">驯夫记:不负梵心不负妖</a> </li>
+                    <li><a class="auto-style15" href="t/book/category/99/">[玄幻]</a><a class="auto-style2" href="t/book/366309/">逆天修罗魔神:通天修士</a> </li>
+                    <li class="auto-style16"><a class="auto-style15" href="t/book/category/131/">[总裁]</a><a class="auto-style2" href="t/book/366300/">豪门情:谁动了我的前夫</a> </li>
+                </ul>
+            </section>
+            <div style="clear: both;">
+            </div>
+        </div>
+    </div>
+    <div class="blockContainer">
+        <nav class="p4">
+            <article class="menu ft24">
+                <article class="fl title c_gray">
+                    男频</article>
+                <article class="fr mark">
+                    <a class="auto-style12" href="javascript:;">本期</a> <a class="auto-style12" href="javascript:;">往期</a>
+                    <article class="mark_line line">
+                    </article>
+                </article>
+            </article>
+        </nav>
+        <div class="touchblock ani">
+            <section class="p8 ft24 c3">
+                <ul class="auto-style13">
+                    <li class="auto-style14"><a class="auto-style15" href="t/book/category/111/">[科幻]</a><a class="auto-style2" href="t/book/366308/">异能少年王:末日审判者</a> </li>
+                    <li><a class="auto-style15" href="t/book/category/106/">[穿越]</a><a class="auto-style2" href="t/book/366303/">捡个皇帝老公:淑女攻略</a> </li>
+                    <li><a class="auto-style15" href="t/book/category/99/">[玄幻]</a><a class="auto-style2" href="t/book/366591/">杀神祖先附体:至尊狂圣</a> </li>
+                    <li><a class="auto-style15" href="t/book/category/131/">[总裁]</a><a class="auto-style2" href="t/book/366298/">误惹大少爷:娇妻太凶猛</a> </li>
+                    <li><a class="auto-style15" href="t/book/category/99/">[玄幻]</a><a class="auto-style2" href="t/book/367210/">炼丹宗师重生:异界魔君</a> </li>
+                    <li class="auto-style16"><a class="auto-style15" href="t/book/category/81/">[情感]</a><a class="auto-style2" href="t/book/353505/">都市绝恋:再见，我的爱人</a> </li>
+                </ul>
+            </section>
+            <section class="p8 ft24 c3">
+                <ul class="auto-style13">
+                    <li class="auto-style14"><a class="auto-style15" href="t/book/category/103/">[都市]</a><a class="auto-style2" href="t/book/366299/">超级异能:我的美女校花</a> </li>
+                    <li><a class="auto-style15" href="t/book/category/99/">[玄幻]</a><a class="auto-style2" href="t/book/366292/">罗森神作降临:白银之歌</a> </li>
+                    <li><a class="auto-style15" href="t/book/category/99/">[玄幻]</a><a class="auto-style2" href="t/book/366302/">热血狂战异界:纯阳武圣</a> </li>
+                    <li><a class="auto-style15" href="t/book/category/133/">[幻想]</a><a class="auto-style2" href="t/book/366304/">驯夫记:不负梵心不负妖</a> </li>
+                    <li><a class="auto-style15" href="t/book/category/99/">[玄幻]</a><a class="auto-style2" href="t/book/366309/">逆天修罗魔神:通天修士</a> </li>
+                    <li class="auto-style16"><a class="auto-style15" href="t/book/category/131/">[总裁]</a><a class="auto-style2" href="t/book/366300/">豪门情:谁动了我的前夫</a> </li>
+                </ul>
+            </section>
+            <div style="clear: both;">
+            </div>
+        </div>
+    </div>
+    <div class="blockContainer">
+        <nav class="p4">
+            <article class="menu ft24">
+                <article class="fl title c_gray">
+                    女频</article>
+                <article class="fr mark">
+                    <a class="auto-style12" href="javascript:;">本期</a> <a class="auto-style12" href="javascript:;">往期</a>
+                    <article class="mark_line line">
+                    </article>
+                </article>
+            </article>
+        </nav>
+        <div class="touchblock ani">
+            <section class="p8 ft24 c3">
+                <ul class="auto-style13">
+                    <li class="auto-style14"><a class="auto-style15" href="t/book/category/111/">[科幻]</a><a class="auto-style2" href="t/book/366308/">异能少年王:末日审判者</a> </li>
+                    <li><a class="auto-style15" href="t/book/category/106/">[穿越]</a><a class="auto-style2" href="t/book/366303/">捡个皇帝老公:淑女攻略</a> </li>
+                    <li><a class="auto-style15" href="t/book/category/99/">[玄幻]</a><a class="auto-style2" href="t/book/366591/">杀神祖先附体:至尊狂圣</a> </li>
+                    <li><a class="auto-style15" href="t/book/category/131/">[总裁]</a><a class="auto-style2" href="t/book/366298/">误惹大少爷:娇妻太凶猛</a> </li>
+                    <li><a class="auto-style15" href="t/book/category/99/">[玄幻]</a><a class="auto-style2" href="t/book/367210/">炼丹宗师重生:异界魔君</a> </li>
+                    <li class="auto-style16"><a class="auto-style15" href="t/book/category/81/">[情感]</a><a class="auto-style2" href="t/book/353505/">都市绝恋:再见，我的爱人</a> </li>
+                </ul>
+            </section>
+            <section class="p8 ft24 c3">
+                <ul class="auto-style13">
+                    <li class="auto-style14"><a class="auto-style15" href="t/book/category/103/">[都市]</a><a class="auto-style2" href="t/book/366299/">超级异能:我的美女校花</a> </li>
+                    <li><a class="auto-style15" href="t/book/category/99/">[玄幻]</a><a class="auto-style2" href="t/book/366292/">罗森神作降临:白银之歌</a> </li>
+                    <li><a class="auto-style15" href="t/book/category/99/">[玄幻]</a><a class="auto-style2" href="t/book/366302/">热血狂战异界:纯阳武圣</a> </li>
+                    <li><a class="auto-style15" href="t/book/category/133/">[幻想]</a><a class="auto-style2" href="t/book/366304/">驯夫记:不负梵心不负妖</a> </li>
+                    <li><a class="auto-style15" href="t/book/category/99/">[玄幻]</a><a class="auto-style2" href="t/book/366309/">逆天修罗魔神:通天修士</a> </li>
+                    <li class="auto-style16"><a class="auto-style15" href="t/book/category/131/">[总裁]</a><a class="auto-style2" href="t/book/366300/">豪门情:谁动了我的前夫</a> </li>
+                </ul>
+            </section>
+            <div style="clear: both;">
+            </div>
+        </div>
+    </div>
+    <nav class="p4 mt_25">
+        <article class="menu ft24">
+            <article class="fl title c_gray">
+                热门标签 
+            </article>
+        </article>
+    </nav>
+    <section class="p7 p7_20">
+        <a class="auto-style17" href="t/book/search/?query=%E7%A9%BF%E8%B6%8A">穿越</a> <a class="auto-style18" href="t/book/search/?query=%E9%87%8D%E7%94%9F">重生</a> <a class="auto-style19" href="t/book/search/?query=%E6%80%BB%E8%A3%81">总裁</a> <a class="auto-style20" href="t/book/search/?query=%E7%BE%8E%E5%A5%B3">美女</a> <a class="auto-style21" href="t/book/search/?query=%E6%90%9E%E7%AC%91">搞笑</a> <a class="auto-style22" href="t/book/search/?query=%E4%BF%AE%E7%9C%9F">修真</a> <a class="auto-style23" href="t/book/search/?query=%E6%9E%81%E5%93%81">极品</a> <a class="auto-style24" href="t/book/search/?query=%E7%83%AD%E8%A1%80">热血</a> <a class="auto-style25" href="t/book/search/?query=%E8%99%90%E5%BF%83">虐心</a> <a class="auto-style26" href="t/book/search/?query=%E5%A5%87%E5%B9%BB">奇幻</a> <a class="auto-style27" href="t/book/search/?query=%E5%86%9B%E4%BA%8B">军事</a> <a class="auto-style28" href="t/book/search/?query=%E8%B1%AA%E9%97%A8">豪门</a>
+        <a class="auto-style29" href="t/book/search/?query=%E6%9E%81%E5%93%81">极品</a> <a class="auto-style30" href="t/book/search/?query=%E6%9A%A7%E6%98%A7">暧昧</a> <a class="auto-style31" href="t/book/search/?query=%E5%8D%87%E7%BA%A7">升级</a>
+    </section>
+    <div class="blockContainer">
+        <nav class="p4">
+            <article class="menu ft24">
+                <article class="fl title c_gray">
+                    点击榜 
+                </article>
+                <article class="fr mark">
+                    <a class="auto-style12" href="javascript:;">周榜</a> <a class="auto-style12" href="javascript:;">月榜</a> <a class="auto-style12" href="javascript:;">总榜</a>
+                    <article class="mark_line line2">
+                    </article>
+                </article>
+            </article>
+        </nav>
+        <div class="touchblock ani">
+            <section class="p8 ft24">
+                <ul class="auto-style13">
+                    <li class="auto-style32"><a href="t/book/351253/"><span class="num num_c1 ft18 fl">1</span><span class="fl title">透视之眼<span class="title_b">(星辉)</span></span><article class="clear">
+                        </article>
+                        </a></li>
+                    <li><a href="t/book/351193/"><span class="num num_c2 ft18 fl">2</span><span class="fl title">妖孽保镖<span class="title_b">(青狐妖)</span></span><article class="clear">
+                        </article>
+                        </a></li>
+                    <li><a href="t/book/349006/"><span class="num num_c3 ft18 fl">3</span><span class="fl title">护花高手在都市<span class="title_b">(心在流浪)</span></span><article class="clear">
+                        </article>
+                        </a></li>
+                    <li><a href="t/book/365656/"><span class="num num_c ft18 fl">4</span><span class="fl title">护花狂龙<span class="title_b">(青狐妖)</span></span><article class="clear">
+                        </article>
+                        </a></li>
+                    <li class="auto-style32"><a href="t/book/351589/"><span class="num num_c ft18 fl">5</span><span class="fl title">兽破苍穹<span class="title_b">(妖夜)</span></span><article class="clear">
+                        </article>
+                        </a></li>
+                </ul>
+                <article class="more">
+                    <a href="t/rank/all/sale/month/">
+                    <button class="more_btn ft24 c3">
+                        更多
+                    </button>
+                    </a>
+                </article>
+            </section>
+            <section class="p8 ft24">
+                <ul class="auto-style13">
+                    <li class="auto-style32"><a href="t/book/351253/"><span class="num num_c1 ft18 fl">1</span><span class="fl title">透视之眼<span class="title_b">(星辉)</span></span><article class="clear">
+                        </article>
+                        </a></li>
+                    <li><a href="t/book/351193/"><span class="num num_c2 ft18 fl">2</span><span class="fl title">妖孽保镖<span class="title_b">(青狐妖)</span></span><article class="clear">
+                        </article>
+                        </a></li>
+                    <li><a href="t/book/349006/"><span class="num num_c3 ft18 fl">3</span><span class="fl title">护花高手在都市<span class="title_b">(心在流浪)</span></span><article class="clear">
+                        </article>
+                        </a></li>
+                    <li><a href="t/book/365656/"><span class="num num_c ft18 fl">4</span><span class="fl title">护花狂龙<span class="title_b">(青狐妖)</span></span><article class="clear">
+                        </article>
+                        </a></li>
+                    <li class="auto-style32"><a href="t/book/351589/"><span class="num num_c ft18 fl">5</span><span class="fl title">兽破苍穹<span class="title_b">(妖夜)</span></span><article class="clear">
+                        </article>
+                        </a></li>
+                </ul>
+                <article class="more">
+                    <a href="t/rank/all/sale/month/">
+                    <button class="more_btn ft24 c3">
+                        更多
+                    </button>
+                    </a>
+                </article>
+            </section>
+            <section class="p8 ft24">
+                <ul class="auto-style13">
+                    <li class="auto-style32"><a href="t/book/351193/"><span class="num num_c1 ft18 fl">1</span><span class="fl title">妖孽保镖<span class="title_b">(青狐妖)</span></span><article class="clear">
+                        </article>
+                        </a></li>
+                    <li><a href="t/book/349006/"><span class="num num_c2 ft18 fl">2</span><span class="fl title">护花高手在都市<span class="title_b">(心在流浪)</span></span><article class="clear">
+                        </article>
+                        </a></li>
+                    <li><a href="t/book/351253/"><span class="num num_c3 ft18 fl">3</span><span class="fl title">透视之眼<span class="title_b">(星辉)</span></span><article class="clear">
+                        </article>
+                        </a></li>
+                    <li><a href="t/book/349017/"><span class="num num_c ft18 fl">4</span><span class="fl title">药鼎仙途<span class="title_b">(寒香寂寞)</span></span><article class="clear">
+                        </article>
+                        </a></li>
+                    <li class="auto-style32"><a href="t/book/351510/"><span class="num num_c ft18 fl">5</span><span class="fl title">特种兵痞在校园<span class="title_b">(艾连)</span></span><article class="clear">
+                        </article>
+                        </a></li>
+                </ul>
+                <article class="more">
+                    <a href="t/rank/all/sale/total/">
+                    <button class="more_btn ft24 c3">
+                        更多
+                    </button>
+                    </a>
+                </article>
+            </section>
+        </div>
+    </div>
+    <div class="blockContainer">
+        <nav class="p4">
+            <article class="menu ft24">
+                <article class="fl title c_gray">
+                    分类导航 
+                </article>
+            </article>
+        </nav>
+        <ul class="auto-style33">
+            <li><a href="javascript:void(0)">全部分类</a></li>
+            <li><a href="javascript:void(0)">玄幻小说</a></li>
+            <li><a href="javascript:void(0)">架空历史</a></li>
+            <li><a href="javascript:void(0)">仙侠修真</a></li>
+            <li><a href="javascript:void(0)">异世大陆</a></li>
+            <li><a href="javascript:void(0)">转世重生</a></li>
+            <li><a href="javascript:void(0)">言情小说</a></li>
+            <li><a href="javascript:void(0)">穿越小说</a></li>
+            <li><a href="javascript:void(0)">现代言情</a></li>
+            <li><a href="javascript:void(0)">都市小说</a></li>
+            <li><a href="javascript:void(0)">官场小说</a></li>
+            <li><a href="javascript:void(0)">黑道小说</a></li>
+        </ul>
+        <div class="clearfix">
+        </div>
+    </div>
+    <div class="b_return">
+        <a class="auto-style2" href="Index.aspx#body"><span class="b_return_i">︽</span>回顶部 </a>
+    </div>
+    <footer class="mt_20">
+        <section class="p9">
+            <nav class="wap">
+                请在wifi或3G下浏览(<a alt="wap.tadu.com" href="http://wap.tadu.com/">点此访问简版</a>)
+            </nav>
+            <nav>
+                <ul>
+                    <li><a href="t/index/">首页</a><span class="line "></span> </li>
+                    <li><a href="t/feedback/">建议</a><span class="line"></span> </li>
+                    <li><a href="t/service/">客服</a><span class="line"></span> </li>
+                    <li><a href="t/help/">帮助</a> </li>
+                </ul>
+            </nav>
+            <div>
+                <p>
+                    塔读tadu.com&nbsp;<span id="time"></span>
+                </p>
+                <p>
+                    京ICP备09017823号 
+                </p>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>

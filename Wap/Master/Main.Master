@@ -10,29 +10,28 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-touch-fullscreen" content="YES">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <script src="../Js/jquery.js"></script>
-    <script src="../Js/jquery.mobile-1.3.0.js"></script>
-    <link href="../Css/jquery.mobile-1.3.0.css" rel="stylesheet" />
+    <script src="../script/seajs/sea.js" data-main="main.js"></script>
 
-    <link href="../Css/common.css" rel="stylesheet" />
-    <link href="../Css/index.css" rel="stylesheet" />
-    <script src="../Js/index.js"></script>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <header>
-        <div class="top">
-            <div class="logo">
-                <a href="/?r=mobile/index">
-            <img width="150" height="45" src="../images/logo.png" /></a>   </div>
-            <div class="uinfo">
-                <a href="/?r=mobile/login"  data-role="button" data-inline="true" data-theme="d"  class="action">登录</a>
-            </div>
-        </div>
-        <div class="clear">
+    <div class="container">
+        <header>
 
-            <nav class="p18 ft24">
+            <div class="top">
+                <div class="logo">
+                    <a href="/?r=mobile/index">
+                        <img width="150" src="../images/logo.png" /></a>
+                </div>
+                <ul id="nav">
+
+                    <li id="nav1"><a class="text-success" href="http://m.triviala.com/user/quizzes/create"><span>下载</span></a></li>
+                    <li id="nav2"><a class="text-success" href="User/Login.aspx"><span>用户</span></a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+            <nav class="p18 ft24 mainNav">
                 <article class="fl first mr_15"><a href="../Index.aspx" class="c_white"><span class="icon va"></span><span class="va ml_5">首页</span></a> </article>
                 <%--  <article class="fl second"><a href="/t/book/category/130/" class="c_white fl ml_30"><span class="va">宫廷</span></a> </article>
                 <article class="fl third"><a class="c_white fl ml_30"><span class="va">玉楼笙歌</span></a> </article>
@@ -40,33 +39,50 @@
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
                 </asp:ContentPlaceHolder>
                 <article class="fl last" style="display: none;"><a class="c_white fl ml_30"><span class="va"></span></a></article>
+                <a class="gIcon navBtn" id="j_navBtn" href="javascript:void(0);">
+
+
+                    <span class="navLine"></span>
+                    <em class="hideBottomLine" id="j_hideBottomLine" style="display: block;"></em>
+
+                </a>
                 <div style="clear: both;"></div>
             </nav>
 
-        </div>
-    </header>
+            <nav class="navGroup" >
 
+                <a href="http://sina.cn/?vt=4&amp;wm=4002&amp;PHPSESSID=658bc9f5bb115fb698e959469b8e7be4">首页</a>
+                <a href="http://news.sina.cn/?vt=4&amp;wm=4002&amp;PHPSESSID=658bc9f5bb115fb698e959469b8e7be4">新闻</a>
+                <a href="http://sports.sina.cn/?vt=4&amp;wm=4002&amp;PHPSESSID=658bc9f5bb115fb698e959469b8e7be4">体育</a>
+                <a href="http://video.sina.cn/?vt=4&amp;wm=4002&amp;PHPSESSID=658bc9f5bb115fb698e959469b8e7be4">视频</a>
+                <a href="http://book.sina.cn/?vt=4&amp;wm=4002&amp;PHPSESSID=658bc9f5bb115fb698e959469b8e7be4">读书</a>
+                <a onclick="openDialog('');" href="javascript:;">更多</a>
 
-    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-    </asp:ContentPlaceHolder>
-    <footer class="mt_20">
-        <section class="p9">
-
-            <nav class="wap">请在wifi或3G下浏览(<a href="http://wap.tadu.com" alt="wap.tadu.com">点此访问简版</a>) </nav>
-            <nav>
-                <ul>
-                    <li><a href="/t/index/">首页</a><span class="line "></span> </li>
-                    <li><a href="/t/feedback/">建议</a><span class="line"></span> </li>
-                    <li><a href="/t/service/">客服</a><span class="line"></span> </li>
-                    <li><a href="/t/help/">帮助</a> </li>
-                </ul>
             </nav>
-            <div>
-                <p>塔读tadu.com&nbsp;<span id="time"></span> </p>
-                <p>京ICP备09017823号 </p>
-            </div>
-        </section>
-    </footer>
+        </header>
+
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <footer class="mt_20">
+            <section class="p9">
+
+                <nav class="wap">请在wifi或3G下浏览(<a href="http://wap.tadu.com" alt="wap.tadu.com">点此访问简版</a>) </nav>
+                <nav>
+                    <ul>
+                        <li><a href="/t/index/">首页</a><span class="line "></span> </li>
+                        <li><a href="/t/feedback/">建议</a><span class="line"></span> </li>
+                        <li><a href="/t/service/">客服</a><span class="line"></span> </li>
+                        <li><a href="/t/help/">帮助</a> </li>
+                    </ul>
+                </nav>
+                <div>
+                    <p>塔读tadu.com&nbsp;<span id="time"></span> </p>
+                    <p>京ICP备09017823号 </p>
+                </div>
+            </section>
+        </footer>
+    </div>
 </body>
 
 

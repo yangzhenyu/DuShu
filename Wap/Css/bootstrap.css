@@ -3922,11 +3922,12 @@ input[type="submit"].btn.btn-mini {
 }
 
 .nav {
-  margin-bottom: 20px;
-  margin-left: 0;
-  list-style: none;
+    margin-bottom: 20px;
+    margin-left: 0;
+    list-style: none;
+    background-image: url('../images/p1_bg.jpg');
 }
-
+ 
 .nav > li > a {
   display: block;
 }
@@ -3974,7 +3975,7 @@ input[type="submit"].btn.btn-mini {
 }
 
 .nav-list > li > a {
-  padding: 3px 15px;
+  padding: 3px 15px; background-color: #B9B08F; 
 }
 
 .nav-list > .active > a,
@@ -3990,15 +3991,16 @@ input[type="submit"].btn.btn-mini {
   margin-right: 2px;
 }
 
-.nav-list .divider {
+.nav-list .divider { 
   *width: 100%;
   height: 1px;
   margin: 9px 1px;
   *margin: -5px 0 5px;
   overflow: hidden;
-  background-color: #e5e5e5;
+  background-color: #B9B08F;
   border-bottom: 1px solid #ffffff;
-}
+ }
+
 
 .nav-tabs,
 .nav-pills {
@@ -4055,14 +4057,12 @@ input[type="submit"].btn.btn-mini {
   border-color: #eeeeee #eeeeee #dddddd;
 }
 
-.nav-tabs > .active > a,
-.nav-tabs > .active > a:hover,
-.nav-tabs > .active > a:focus {
-  color: #555555;
-  cursor: default;
-  background-color: #ffffff;
-  border: 1px solid #ddd;
-  border-bottom-color: transparent;
+.nav-tabs > .active > a, .nav-tabs > .active > a:hover, .nav-tabs > .active > a:focus {
+    color: #555555;
+    cursor: default;
+    background-color: #7FBD27;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
 }
 
 .nav-pills > li > a {
@@ -4603,15 +4603,13 @@ input[type="submit"].btn.btn-mini {
   background-color: transparent;
 }
 
-.navbar .nav > .active > a,
-.navbar .nav > .active > a:hover,
-.navbar .nav > .active > a:focus {
-  color: #555555;
-  text-decoration: none;
-  background-color: #e5e5e5;
-  -webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
-     -moz-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
-          box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
+    color: #B7FCFE;
+    text-decoration: none;
+    background-color: #55C1C3;
+    -webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+    -moz-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+    box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
 }
 
 .navbar .btn-navbar {
@@ -5944,8 +5942,7 @@ a.badge:focus {
 }
 
 .carousel {
-  position: relative;
-  margin-bottom: 20px;
+  position: relative; 
   line-height: 1;
 }
 
