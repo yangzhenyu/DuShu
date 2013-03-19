@@ -4,12 +4,17 @@
     var routes = require('./routes');
     var querystring = require('lib/querystring');
 
-    var route, search,qs;
+    var form = require("./common.actions");
+    $("#showmsg").click(function () { 
+
+        form.alertMsg("用户名密码错误",0);
+    }); 
+    var route, search, qs;
     exports.run = function () {
         /**异步加载所需要的模板和样式文件,配置在resources.js中**/
         $.each(resources, function (key, val) {
             require.async(resources[key], function () {
-             
+
                 if (typeof (Storage) !== "undefined") {
 
                     sessionStorage.setItem(key, val);
@@ -27,7 +32,7 @@
 
         /**判断当前页面是属于什么目录，按照routes配置，执行相应js**/
         if (typeof window.location.pathname !== 'undefined' && window.location.pathname != null && window.location.pathname != '') {
-            var route = window.location.pathname.toLocaleLowerCase(); 
+            var route = window.location.pathname.toLocaleLowerCase();
             if (typeof routes[route] !== 'undefined') {
                 require.async(routes[route], function (app) {
                     if (typeof app !== 'undefined' && typeof app.init !== 'undefined') {
@@ -59,7 +64,7 @@
                 };
 
                 if ($(".article img:eq(" + i + ")").width() > w) {
-                   var h = $(".article img:eq(" + i + ")").height() * w / $(".article img:eq(" + i + ")").width()
+                    var h = $(".article img:eq(" + i + ")").height() * w / $(".article img:eq(" + i + ")").width()
                     $(".article img:eq(" + i + ")").width(w);
                     $(".article img:eq(" + i + ")").height(h);
                 }

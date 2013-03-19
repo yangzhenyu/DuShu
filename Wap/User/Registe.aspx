@@ -23,7 +23,7 @@
                             <label class="ft20">电子邮箱(用于找回密码)：</label>
                             <input type="password" name="password" id="Password3" value="" /></li>
                     </ul>
-                    <input name="btn_register" type="submit" value="注  册 &raquo;" id="btn_register"  class="btn btn-primary" />
+                    <input name="btn_register" type="submit" value="注  册 &raquo;" id="btn_register"  class="btn btn-info" />
                     <a style="margin-top: 0.6em; vertical-align: middle; display: inline-block;" href="/?r=space/qqloginformobile" rel="external">
                         <img src="http://static2.zhufukc.com/img/Connect_logo_3.png" /></a>
                 </div>
@@ -31,7 +31,7 @@
         </form>
         <div class="content-foot">
             <hr />
-            <p class="ft20">我已经有帐号，  <a class="btn btn-primary" href="login.aspx">登录 &raquo;</a></p>
+            <p class="ft18">我已经有帐号，立刻<a class="btn btn-link" href="login.aspx">登录 &raquo;</a></p>
 
         </div>
 

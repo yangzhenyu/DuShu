@@ -1,0 +1,148 @@
+﻿.zwtopnav {
+    padding: 0px 0px 8px;
+    overflow: hidden;
+    clear: both;
+}
+
+.blue_box {
+    background: rgb(222, 227, 242);
+}
+
+.backbtn {
+    background: url("http://u1.sinaimg.cn/upload/books/icon_bg.png") no-repeat 4px -37px;
+    width: 50px;
+    height: 25px;
+    color: rgb(255, 255, 255);
+    line-height: 25px;
+    padding-left: 15px;
+    font-size: 14px;
+    display: block;
+    text-shadow: 0.5px 0px 1px lightgray;
+}
+.s_skin a {
+	border-radius: 3px; border: 1px solid rgba(0, 0, 0, 0.35); width: 30px; height: 30px; margin-left: 5px; display: inline-block; box-shadow: 0px 2px 1px lightslategray; -moz-box-shadow: 0px 2px 1px lightSlateGray; -webkit-box-shadow: 0px 2px 1px lightSlateGray; -webkit-border-radius: 3px; -moz-border-radius: 3px;
+}
+a.s_def {
+	background: rgb(222, 227, 242);
+}
+a.s_yel {
+	background: rgb(255, 249, 237);
+}
+a.s_gre {
+	background: rgb(229, 248, 203);
+}
+a.s_nig {
+	background: url("http://u1.sinaimg.cn/upload/books/icon_bg.png") no-repeat -1px -1px rgb(37, 36, 48);
+}
+.zw_nav {
+    background: url("http://u1.sinaimg.cn/upload/2012/08/20/zw_new_icon.png") no-repeat 0px 0px;
+    width: 36px;
+    height: 26px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.mulu {
+    background-position: 0px -28px;
+}
+
+.shoucang {
+    background-position: 0px -53px;
+    width: 28px;
+}
+
+.shezhi {
+    background-position: 0px -79px;
+}
+
+.actived.mulu {
+    background-position: 0px -106px;
+    height: 35px;
+}
+
+.actived.shoucang {
+}
+
+.actived.shezhi {
+    background-position: 0px -145px;
+    height: 35px;
+}
+
+.zw_main_hidden#zw_main {
+    display: none;
+}
+
+.opceng {
+    background: rgb(222, 227, 242);
+    border-radius: 0px;
+    text-align: left;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-right: 0px;
+    margin-left: 0px;
+    border-top-color: rgb(192, 195, 221);
+    border-bottom-color: rgb(204, 204, 204);
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: dashed;
+    box-shadow: 0px -1px 2px silver;
+}
+
+    .opceng h3 {
+        line-height: 34px;
+        font-size: 16px;
+        font-weight: normal;
+        border-bottom-color: rgb(166, 166, 166);
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+    }
+
+        .opceng h3 span {
+            color: rgb(153, 153, 153);
+        }
+
+    .opceng .cbox {
+        padding: 5px 2px;
+        overflow: hidden;
+        border-top-color: currentColor;
+        border-top-width: 0px;
+        border-top-style: none;
+        overflow: hidden;
+        border-top-color: rgb(255, 255, 255);
+        border-top-width: 1px;
+        border-top-style: solid;
+    }
+    .opset {
+	display: inline-block;height: 34px; line-height: 34px;
+}
+.opset li {
+	height: 29px; line-height: 29px; display: inline-block;
+}
+.opset a {
+	color: rgb(0, 58, 245);
+}
+.opset a.on {
+	color: rgb(0, 0, 0); cursor: text;
+}
+.opceng .cbox {
+	padding: 5px 2px; overflow: hidden; border-top-color: currentColor; border-top-width: 0px; border-top-style: none;
+}
+.f_reduce {
+	margin-right: 20px;
+}
+.f_increase {
+	font-size: 18px; font-weight: bold;
+}
+.f_reduce a.active_on {
+	color: rgb(0, 0, 0);
+}
+.f_increase a.active_on {
+	color: rgb(0, 0, 0);
+}
+.f_reduce a {
+	color: rgb(182, 182, 182);
+}
+.f_increase a {
+	color: rgb(182, 182, 182);
+}

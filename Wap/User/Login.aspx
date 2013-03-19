@@ -20,8 +20,8 @@
                             <label>密码</label>
                             <input type="password" name="password" id="Password1" value="" /></li>
                     </ul>
-                    <input name="btnSign" data-inline="true" type="submit" value="登  录 &raquo;" class="btn btn-primary" />
-                    <a href="findpwd.aspx">忘记密码？</a>
+                    <input name="btnSign" data-inline="true" type="submit" value="登  录 &raquo;" class="btn btn-info" />
+                    <a href="findpwd.aspx" class="btn btn-link">忘记密码？</a>
                 </div>
             </fieldset>
         </form>
@@ -29,8 +29,9 @@
             <div class="sep"></div>
             <div id="sign-register">
                 <h3>还没有账号? 快速免费注册！</h3>
-                <p>保存你的阅读记录，阅读更快更新更多！</p>
-                <a data-role="button" data-inline="true" data-theme="d" href="Registe.aspx">点击注册 &raquo;</a>
+                <p>
+                    保存你的阅读记录，阅读更快更新更多！   <a data-inline="true" class="btn btn-link" href="Registe.aspx">点击注册 &raquo;</a>
+                </p>
             </div>
         </div>
     </div>

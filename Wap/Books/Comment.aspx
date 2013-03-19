@@ -6,7 +6,7 @@
 
     <!--发布框-->
     <div class="articleComment">
-        <h3>请您<a href='http://3g.sina.com.cn/prog/wapsite/sso/login.php?ns=1&amp;revalid=0&amp;backURL=http%3A%2F%2Fbook.proc.sina.cn%2Fcmnt%2Flist.php%3Fproduct%3Dbook%26index%3D1_5_222236_222236%7C0%7C1&amp;backTitle=%CA%D6%BB%FA%D0%C2%C0%CB%CD%F8&amp;vt=4&amp;wm=4002&amp;PHPSESSID=658bc9f5bb115fb698e959469b8e7be4'>登录</a>/<a href='http://3g.sina.com.cn/prog/wapsite/sso/register.php?ns=1&amp;revalid=0&amp;backURL=http%3A%2F%2Fbook.proc.sina.cn%2Fcmnt%2Flist.php%3Fproduct%3Dbook%26index%3D1_5_222236_222236%7C0%7C1&amp;backTitle=%CA%D6%BB%FA%D0%C2%C0%CB%CD%F8&amp;vt=4&amp;wm=4002&amp;PHPSESSID=658bc9f5bb115fb698e959469b8e7be4'>注册</a>后再评论<span>0条</span></h3>
+        <h5>请您<a href='http://3g.sina.com.cn/prog/wapsite/sso/login.php?ns=1&amp;revalid=0&amp;backURL=http%3A%2F%2Fbook.proc.sina.cn%2Fcmnt%2Flist.php%3Fproduct%3Dbook%26index%3D1_5_222236_222236%7C0%7C1&amp;backTitle=%CA%D6%BB%FA%D0%C2%C0%CB%CD%F8&amp;vt=4&amp;wm=4002&amp;PHPSESSID=658bc9f5bb115fb698e959469b8e7be4'>登录</a>/<a href='http://3g.sina.com.cn/prog/wapsite/sso/register.php?ns=1&amp;revalid=0&amp;backURL=http%3A%2F%2Fbook.proc.sina.cn%2Fcmnt%2Flist.php%3Fproduct%3Dbook%26index%3D1_5_222236_222236%7C0%7C1&amp;backTitle=%CA%D6%BB%FA%D0%C2%C0%CB%CD%F8&amp;vt=4&amp;wm=4002&amp;PHPSESSID=658bc9f5bb115fb698e959469b8e7be4'>注册</a>后再评论<span>0条</span></h5>
 
         <form action="http://book.proc.sina.cn/cmnt/post.php?product=book&amp;vt=4&amp;wm=4002&amp;PHPSESSID=658bc9f5bb115fb698e959469b8e7be4" method="post" onsubmit="return formCheck(this)">
             <div class="moarea">
@@ -18,11 +18,9 @@
 
             </div>
             <div class="articleComment_fb">
-                <span class="fl">
-                    <input type="checkbox" value="1" name="towb">
-                    同步到您的微博</span>
+
                 <span class="fr">
-                    <input type="submit" class="artBt" value="发言"></span>
+                    <input type="submit" class="btn btn-info" value="发言"></span>
             </div>
         </form>
     </div>
@@ -39,5 +37,8 @@
     </div>
 </asp:Content>
 <asp:Content ID="Content3" runat="server" ContentPlaceHolderID="ContentPlaceHolder2">
+    <article class="fl second"><a href="/t/book/category/130/" class="c_white fl ml_30"><span class="va">玉楼笙歌</span></a> </article>
+    <article class="fl third"><a class="c_white fl ml_30"><span class="va">评论内容</span></a> </article>
+
 </asp:Content>
 

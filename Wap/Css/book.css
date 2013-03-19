@@ -100,6 +100,7 @@
     border-radius: 5px;
     border: 1px solid rgb(182, 182, 182);
     position: relative;
+    word-wrap: normal;
     -webkit-border-radius: 5px;
 }
 
@@ -647,3 +648,59 @@
 }
 
 
+articleComment {
+	background: rgb(245, 245, 245); padding: 0px 14px 10px; overflow: hidden; clear: both; font-size: 14px;
+}
+.articleComment h3 {
+	height: 38px; line-height: 38px; overflow: hidden; clear: both; font-weight: normal;
+}
+.articleComment h3 a {
+	color: rgb(27, 89, 142);
+}
+.articleComment h3 span {
+	color: rgb(26, 26, 26); font-size: 12px; float: right;
+}.moarea {
+	border: 1px solid rgb(224, 224, 224); overflow: hidden; margin-bottom: 10px; position: relative;
+}
+.moarea textarea {
+	border: currentColor; width: 100%; height: 47px; font-size: 16px; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+}
+.moarea textarea {
+	-webkit-transition: .3s ease-in-out; -moz-transition: .3s ease-in-out; -o-transition: .3s ease-in-out;
+}
+.moarea textarea:focus {
+	height: 68px;
+}
+.andsp {
+	right: 0px; bottom: 0px; clear: both; position: absolute;
+}
+.moarea .qk {
+	background: url("http://u1.sinaimg.cn/upload/2013/01/09/25217.png") no-repeat right; margin: 0px 5px 5px; line-height: 19px; padding-right: 23px; float: right;
+}
+.articleComment_fb {
+	overflow: hidden; clear: both; font-size: 12px;
+}
+.commentnav {
+	background-position: left bottom; height: 46px; text-align: center; line-height: 46px; overflow: hidden; clear: both; font-weight: bold; position: relative; background-repeat: repeat-x;
+}
+.commentnav a {
+	width: 32%; text-align: center; color: rgb(153, 153, 153); float: left; display: inline;
+}
+.commentnav a.secondnav {
+	width: 49%; text-align: center; color: rgb(153, 153, 153); float: left; display: inline;
+}
+.commentnav span {
+	color: rgb(218, 219, 219); font-size: 11px; font-weight: normal; float: left;
+}
+.commentnav a.on {
+	background: url("http://u1.sinaimg.cn/upload/2013/01/09/25219.png") no-repeat bottom; color: rgb(67, 66, 66);
+}
+.commentnav a:hover {
+	background: url("http://u1.sinaimg.cn/upload/2013/01/09/25219.png") no-repeat bottom; color: rgb(67, 66, 66);
+}
+.commentCont {
+	
+}
+.commentList {
+	padding: 7px 0px; overflow: hidden; clear: both; border-bottom-color: rgb(222, 222, 222); border-bottom-width: 1px; border-bottom-style: dashed;
+}

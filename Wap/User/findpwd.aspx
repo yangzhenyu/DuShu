@@ -19,7 +19,7 @@
                             <label class="ft20">请输入您的电子邮箱：</label>
                             <input type="text" name="password" id="Password3" value="" /></li>
                     </ul>
-                    <input name="btn_register" type="submit" value="确  定 &raquo;" id="btn_register" class="btn btn-primary" />
+                    <input name="btn_register" type="submit" value="确  定 &raquo;" id="btn_register" class="btn btn-info" />
                     <a href="Login.aspx">返回继续登录</a>
                 </div>
             </fieldset>

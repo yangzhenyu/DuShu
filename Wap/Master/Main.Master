@@ -49,7 +49,7 @@
                 <div style="clear: both;"></div>
             </nav>
 
-            <nav class="navGroup" >
+            <nav class="navGroup" style="display:none;">
 
                 <a href="http://sina.cn/?vt=4&amp;wm=4002&amp;PHPSESSID=658bc9f5bb115fb698e959469b8e7be4">首页</a>
                 <a href="http://news.sina.cn/?vt=4&amp;wm=4002&amp;PHPSESSID=658bc9f5bb115fb698e959469b8e7be4">新闻</a>

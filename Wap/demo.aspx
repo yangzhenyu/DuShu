@@ -11,7 +11,7 @@
     <meta name="apple-touch-fullscreen" content="YES">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <script src="script/seajs/sea.js" data-main="main.js"></script>
-
+ 
 </head>
 <body>
     <div class="container">
@@ -35,7 +35,7 @@
                     <div class="container">
                         <ul class="nav">
                             <li class="active"><a href="#" class="ft20">首页</a></li>
-                            <li><a class="ft20" href="#">分类</a></li>
+                            <li><a class="ft20" href="javascript:void(0);">分类</a></li>
                             <li><a class="ft20" href="#">书库</a></li>
                             <li><a class="ft20" href="#">排行</a></li>
                             <li><a class="ft20" href="#">搜索</a></li>
@@ -45,7 +45,7 @@
             </div>
 
         </header>
-
+        <input type="button" id="showmsg" value="44444" />
 
         <div id="myCarousel" class="carousel slide">
             <ol class="carousel-indicators">
