@@ -176,12 +176,12 @@
 }
 
 .mark {
-    height: 51px;
+    height: 41px;
     position: relative;
 }
 
     .mark .mark_line {
-        width: 50px;
+        width: 40px;
         height: 3px;
         bottom: 0px;
         display: inline-block;
@@ -190,7 +190,7 @@
     }
 
 .p4 {
-    height: 52px;
+    height: 41px;
 }
 
 .p4 {
@@ -204,8 +204,8 @@
 
     .p4 .menu {
         padding: 0px 20px;
-        height: 51px;
-        line-height: 51px;
+        height: 40px;
+        line-height: 40px;
         margin-top: 1px;
     }
 
@@ -227,7 +227,7 @@
     width: 100%;
     height: 133px;
     clear: both;
-    font-size: 24px;
+    font-size: 16px;
     position: relative;
 }
 
@@ -237,11 +237,11 @@
 
     .p7 a {
         width: 96px;
-        height: 40px;
+        height: 30px;
         text-align: center;
         color: rgb(51, 51, 51);
         font-weight: normal;
-        line-height: 40px;
+        line-height: 30px;
         display: inline-block;
         position: absolute;
     }
@@ -259,7 +259,7 @@
         }
 
 .p7_20 {
-    height: 340px;
+    height: 260px;
 }
 
     .p7_20 a.k1 {
@@ -394,11 +394,11 @@
     }
 
     .p8 li {
-        height: 48px;
+        height: 20px;
         background: url('../images/arrow.png') no-repeat right;
         margin: 0px 20px;
         padding: 10px 0px 4px;
-        line-height: 34px;
+        line-height: 24px;
         border-top-color: rgb(255, 255, 255);
         border-bottom-color: rgb(204, 204, 204);
         border-top-width: 1px;
@@ -449,7 +449,7 @@
         text-align: center;
         color: white;
         line-height: 20px;
-        margin-top: 7px;
+        margin-top: 0px;
         margin-right: 13px;
         vertical-align: middle;
         display: inline-block;
@@ -460,7 +460,7 @@
         display: inline-block;
         font-weight: normal;
         color: black;
-        height: 48px;
+        height: 35px;
     }
 
     .p8 .title_b {
@@ -469,17 +469,19 @@
     }
 
     .p8 .more {
+        text-align: center;
         margin: 5px 0px;
     }
 
     .p8 .more_btn {
         border-radius: 5px;
         border: 1px solid rgb(190, 190, 190);
-        width: 100%;
-        height: 44px;
+        width: 50%;
+        height: 30px;
         text-align: center;
-        line-height: 44px;
+        line-height: 30px;
         cursor: pointer;
+      
     }
 
 .mark a {
