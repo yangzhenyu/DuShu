@@ -10,8 +10,25 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-touch-fullscreen" content="YES">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <script src="script/seajs/sea.js" data-main="main.js"></script>
- 
+    <%--  <script src="script/seajs/sea.js" data-main="main.js"></script>--%>
+    <script src="script/lib/jquery-1.9.1.js"></script>
+    <script src="script/lib/json2.js"></script>
+    <script>
+        function ajaxdemo() {
+            var js = { 'result': { 'Result': -1, 'Message': '不支持GET请求', 'PostTime': '2012-2-2' }, 'ido': 233 };
+
+            $.ajax({
+                type: 'POST',
+                url: "ajax/demo/do",
+                data: JSON.stringify(js),
+                // data: js,
+               // contentType: 'application/json;charset=utf-8',
+                dataType: "json"
+            });
+        }
+
+    </script>
+
 </head>
 <body>
     <div class="container">
@@ -45,7 +62,7 @@
             </div>
 
         </header>
-        <input type="button" id="showmsg" value="44444" />
+        <input type="button" id="showmsg" onclick="ajaxdemo()" value="44444" />
 
         <div id="myCarousel" class="carousel slide">
             <ol class="carousel-indicators">

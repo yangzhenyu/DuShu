@@ -111,6 +111,9 @@
     <Compile Include="demo.aspx.designer.cs">
       <DependentUpon>demo.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -238,6 +241,7 @@
     <Content Include="Css\messenger.css" />
     <Content Include="Css\readbook.css" />
     <Content Include="demo.aspx" />
+    <Content Include="Global.asax" />
     <Content Include="HtmlPage1.html" />
     <Content Include="Css\images\ajax-loader.gif" />
     <Content Include="Css\images\icons-18-black.png" />
@@ -268,6 +272,7 @@
     <Content Include="script\lib\bootstrap.min.js" />
     <Content Include="script\lib\jquery-1.9.1.js" />
     <Content Include="script\lib\json.js" />
+    <Content Include="script\lib\json2.js" />
     <Content Include="script\lib\messenger.js" />
     <Content Include="script\lib\underscore.js" />
     <Content Include="script\main.js" />
@@ -302,18 +307,18 @@
     <Content Include="User\Sysmsg.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="web.config" />
     <Content Include="Master\Main.Master" />
     <Content Include="Index.Master" />
     <Content Include="script\common.cache.js" />
     <Content Include="script\module\user.findpwd.js" />
     <Content Include="Ajax.ashx" />
     <None Include="Properties\PublishProfiles\wap.pubxml" />
-    <None Include="web.Debug.config">
-      <DependentUpon>web.config</DependentUpon>
+    <Content Include="Web.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
     </None>
-    <None Include="web.Release.config">
-      <DependentUpon>web.config</DependentUpon>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -336,7 +341,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>4906</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
